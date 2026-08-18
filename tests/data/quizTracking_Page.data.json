@@ -1,0 +1,79 @@
+{
+  "TC_QUIZTRACKING_001": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_002": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_003": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_004": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_005": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_006": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_007": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_008": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_009": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_QUIZTRACKING_010": {
+    "quizTrackingUrl": "https://edu.offtheschool.io/dashboard/quiz-tracking",
+    "unauthenticatedSession": true,
+    "expectedLoginUrlPattern": "/login"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "ots-edtech",
+  "version": "1.0.0",
+  "description": "OTS EdTech Playwright automation suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:login": "playwright test tests/loginPage.spec.js",
+    "test:reels": "playwright test tests/specs/ReelsPage.spec.js",
+    "test:dashboard": "playwright test tests/specs/Dashboard.spec.js",
+    "test:enrollments": "playwright test tests/specs/enrollments_Page.spec.js",
+    "test:switchclasses": "playwright test tests/specs/switchClasses.spec.js",
+    "test:quiztracking": "playwright test tests/specs/quizTracking_Page.spec.js",
+    "test:pages": "playwright test tests/loginPage.spec.js tests/specs/homePage.spec.js tests/specs/Explore-Page.spec.js tests/specs/ReelsPage.spec.js tests/specs/Dashboard.spec.js tests/specs/enrollments_Page.spec.js tests/specs/switchClasses.spec.js tests/specs/quizTracking_Page.spec.js",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "allure:generate": "allure generate ./allure-results --clean -o ./allure-report",
+    "allure:open": "allure open ./allure-report",
+    "allure:serve": "allure serve ./allure-results",
+    "report": "npm run allure:generate && npm run allure:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "allure-commandline": "^2.43.0",
+    "allure-playwright": "^3.10.2"
+  }
+}

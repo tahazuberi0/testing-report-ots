@@ -1,0 +1,74 @@
+{
+  "TC_ENROLL_001": {
+    "dashboardUrl": "https://edu.offtheschool.io/dashboard",
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_ENROLL_002": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_ENROLL_003": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_ENROLL_004": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "exploreUrl": "https://edu.offtheschool.io/dashboard/explore",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_ENROLL_005": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_ENROLL_006": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_ENROLL_007": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_ENROLL_008": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "unauthenticatedSession": true,
+    "expectedLoginUrlPattern": "/login"
+  },
+  "TC_ENROLL_009": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "exploreUrl": "https://edu.offtheschool.io/dashboard/explore",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  }
+}

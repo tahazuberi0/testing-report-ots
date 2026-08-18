@@ -1,0 +1,33 @@
+{
+  "TC_EXPLORE_001": {
+    "url": "https://edu.offtheschool.io/explore"
+  },
+  "TC_EXPLORE_002": {
+    "url": "https://edu.offtheschool.io/explore",
+    "expectedUrlPattern": "digitalschool"
+  },
+  "TC_EXPLORE_003": {
+    "url": "https://edu.offtheschool.io/explore"
+  },
+  "TC_EXPLORE_004": {
+    "url": "https://edu.offtheschool.io/explore"
+  },
+  "TC_EXPLORE_005": {
+    "url": "https://edu.offtheschool.io/explore",
+    "expectedUrlPattern": "skilledbased"
+  },
+  "TC_EXPLORE_006": {
+    "url": "https://edu.offtheschool.io/explore"
+  },
+  "TC_EXPLORE_007": {
+    "url": "https://edu.offtheschool.io/explore"
+  },
+  "TC_EXPLORE_008": {
+    "url": "https://edu.offtheschool.io/explore",
+    "expectedUrlPattern": "digitalschool"
+  },
+  "TC_EXPLORE_009": {
+    "url": "https://edu.offtheschool.io/explore",
+    "digitalSchoolUrlPattern": "digitalschool"
+  }
+}

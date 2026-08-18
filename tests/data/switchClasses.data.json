@@ -1,0 +1,104 @@
+{
+  "TC_SWITCH_001": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_002": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_003": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_004": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_005": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_006": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_007": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_008": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_009": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    },
+    "courseDetailsUrlPattern": "/dashboard/course-details"
+  },
+  "TC_SWITCH_010": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_011": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_SWITCH_012": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "unauthenticatedSession": true,
+    "expectedLoginUrlPattern": "/login"
+  },
+  "TC_SWITCH_013": {
+    "changeCourseUrl": "https://edu.offtheschool.io/dashboard/change-course",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  }
+}

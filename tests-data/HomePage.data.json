@@ -1,0 +1,119 @@
+{
+  "TC_HOME_001": {
+    "url": "https://edu.offtheschool.io/",
+    "heroJourneyText": "Your Journey to",
+    "heroGrowthText": "Growth",
+    "heroValuePropText": "Free,world-class education",
+    "heroBadgeText": "Pakistan's First Free EdTech Platform"
+  },
+  "TC_HOME_002": {
+    "url": "https://edu.offtheschool.io/",
+    "expectedUrlPattern": "register|signup|sign-up|explore|catalog|course|class"
+  },
+  "TC_HOME_003": {
+    "url": "https://edu.offtheschool.io/",
+    "searchQuery": "Algebra"
+  },
+  "TC_HOME_004": {
+    "url": "https://edu.offtheschool.io/",
+    "searchQuery": ""
+  },
+  "TC_HOME_005": {
+    "url": "https://edu.offtheschool.io/",
+    "searchQuery": "zzzxqwnonexistentchapter999"
+  },
+  "TC_HOME_006": {
+    "url": "https://edu.offtheschool.io/"
+  },
+  "TC_HOME_007": {
+    "url": "https://edu.offtheschool.io/",
+    "expectedUrlPattern": "explore"
+  },
+  "TC_HOME_008": {
+    "url": "https://edu.offtheschool.io/",
+    "expectedUrlPattern": "reel"
+  },
+  "TC_HOME_009": {
+    "url": "https://edu.offtheschool.io/"
+  },
+  "TC_HOME_010": {
+    "url": "https://edu.offtheschool.io/",
+    "expectedUrlPattern": "register|signup|sign-up"
+  },
+  "TC_HOME_011": {
+    "url": "https://edu.offtheschool.io/",
+    "authState": "unauthenticated",
+    "expectedUrlPattern": "login|dashboard"
+  },
+  "TC_HOME_012": {
+    "url": "https://edu.offtheschool.io/",
+    "digitalSchoolCategory": "Kindergarten",
+    "categories": [
+      "Kindergarten Early learning",
+      "Primary Classes 1-5 with core",
+      "Secondary Classes 6-8 with",
+      "Higher Secondary Classes 9-12"
+    ]
+  },
+  "TC_HOME_013": {
+    "url": "https://edu.offtheschool.io/",
+    "skillCourse": "Basic Computer",
+    "skills": [
+      "Basic Computer Fundamentals",
+      "Canva Design Graphic design",
+      "Web Design Canva, Photoshop"
+    ]
+  },
+  "TC_HOME_014": {
+    "url": "https://edu.offtheschool.io/",
+    "expectedUrlPattern": "skill"
+  },
+  "TC_HOME_015": {
+    "url": "https://edu.offtheschool.io/"
+  },
+  "TC_HOME_016": {
+    "url": "https://edu.offtheschool.io/"
+  },
+  "TC_HOME_017": {
+    "url": "https://edu.offtheschool.io/",
+    "expectedUrlPattern": "register|signup|sign-up|login|get-start|start"
+  },
+  "TC_HOME_018": {
+    "url": "https://edu.offtheschool.io/"
+  },
+  "TC_HOME_019": {
+    "url": "https://edu.offtheschool.io/"
+  },
+  "TC_HOME_020": {
+    "url": "https://edu.offtheschool.io/",
+    "expectedHostPattern": "instagram\\.com"
+  },
+  "TC_HOME_021": {
+    "url": "https://edu.offtheschool.io/",
+    "expectedUrlPattern": "register|signup|sign-up|explore|catalog|course|class|login"
+  },
+  "TC_HOME_022": {
+    "url": "https://edu.offtheschool.io/",
+    "channelLink": "EdNews",
+    "channels": [
+      "Off The School Comprehensive",
+      "EdNews Latest education",
+      "EdTech Technology-driven",
+      "EdSense Educational insights",
+      "EdFun Fun & engaging learning"
+    ]
+  },
+  "TC_HOME_023": {
+    "url": "https://edu.offtheschool.io/",
+    "footerStayUpdatedText": "Stay UpdatedSubscribe to our",
+    "footerTaglineText": "Pakistan's first free EdTech platform. Learn smartly at your own Pace, Anywhere"
+  },
+  "TC_HOME_024": {
+    "url": "https://edu.offtheschool.io/"
+  },
+  "TC_HOME_025": {
+    "url": "https://edu.offtheschool.io/",
+    "viewportWidth": 390,
+    "viewportHeight": 844
+  }
+}

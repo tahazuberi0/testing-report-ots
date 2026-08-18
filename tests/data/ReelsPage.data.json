@@ -1,0 +1,35 @@
+{
+  "TC_REELS_001": {
+    "entryPageUrl": "https://edu.offtheschool.io/",
+    "reelsUrlPattern": "/reels"
+  },
+  "TC_REELS_002": {
+    "reelsUrl": "https://edu.offtheschool.io/reels",
+    "videoContainerTitlePattern": "Digital Voices: From Pen to Keyboard"
+  },
+  "TC_REELS_003": {
+    "reelsUrl": "https://edu.offtheschool.io/reels"
+  },
+  "TC_REELS_004": {
+    "reelsUrl": "https://edu.offtheschool.io/reels",
+    "initialReelTitle": ""
+  },
+  "TC_REELS_005": {
+    "reelsUrl": "https://edu.offtheschool.io/reels",
+    "initialReelTitle": ""
+  },
+  "TC_REELS_006": {
+    "reelsUrl": "https://edu.offtheschool.io/reels",
+    "expectedExitUrlPattern": "edu\\.offtheschool\\.io/(\\?.*)?$|/home|/reels$"
+  },
+  "TC_REELS_007": {
+    "reelsUrl": "https://edu.offtheschool.io/reels"
+  },
+  "TC_REELS_008": {
+    "reelsUrl": "https://edu.offtheschool.io/reels"
+  },
+  "TC_REELS_009": {
+    "reelsUrl": "https://edu.offtheschool.io/reels",
+    "entryPageUrl": "https://edu.offtheschool.io/"
+  }
+}
