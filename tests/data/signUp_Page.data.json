@@ -1,0 +1,57 @@
+{
+  "TC_SIGNUP_001": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_002": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_003": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_004": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_005": {
+    "signUpUrl": "https://edu.offtheschool.io/signup",
+    "testEmail": "testuser@example.com",
+    "testPassword": "Test@1234"
+  },
+  "TC_SIGNUP_006": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_007": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_008": {
+    "signUpUrl": "https://edu.offtheschool.io/signup",
+    "expectedLoginUrlPattern": "/login"
+  },
+  "TC_SIGNUP_009": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_010": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_011": {
+    "signUpUrl": "https://edu.offtheschool.io/signup",
+    "testEmail": "testuser@example.com",
+    "testPassword": "Test@1234",
+    "mismatchPassword": "Wrong@9999"
+  },
+  "TC_SIGNUP_012": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_013": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_014": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  },
+  "TC_SIGNUP_015": {
+    "signUpUrl": "https://edu.offtheschool.io/signup",
+    "expectedHomeUrlPattern": "offtheschool.io"
+  },
+  "TC_SIGNUP_016": {
+    "signUpUrl": "https://edu.offtheschool.io/signup"
+  }
+}

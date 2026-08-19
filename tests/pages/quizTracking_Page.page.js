@@ -34,6 +34,14 @@ export class QuizTrackingPage {
 
     // Not in quizTracking_selectors.md — needed to expand collapsed sidebar
     this.menuIcon = page.getByRole('img', { name: 'menu icon' });
+
+    // --- Newly resolved gap selectors ---
+    this.totalAttemptsText = page.getByText('Total Attempts');
+    this.quizzesTakenText = page.getByText('Quizzes Taken');
+    this.averageScoreText = page.getByText('Average Score');
+    this.bestScoreText = page.getByText('Best Score');
+    this.quizAttemptsByChapterHeading = page.getByText('Quiz Attempts by Chapter');
+    this.backButton = page.getByRole('button', { name: 'Back' });
   }
 
   /**
@@ -68,5 +76,17 @@ export class QuizTrackingPage {
 
   async clickBackBar() {
     await this.backBarText.click();
+  }
+
+  async openSortByDropdown() {
+    await this.sortBy.first().click({ force: true });
+  }
+
+  async openShowResultsDropdown() {
+    await this.showResults.first().click({ force: true });
+  }
+
+  async openFilterByQuizDropdown() {
+    await this.filterByQuiz.first().click({ force: true });
   }
 }

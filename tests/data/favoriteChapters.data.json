@@ -1,0 +1,95 @@
+{
+  "TC_FAVCHAP_001": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_002": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_003": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_004": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_005": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_006": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_007": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "unauthenticatedSession": true,
+    "expectedLoginUrlPattern": "/login"
+  },
+  "TC_FAVCHAP_008": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_009": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_010": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_011": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  },
+  "TC_FAVCHAP_012": {
+    "favoriteChaptersUrl": "https://edu.offtheschool.io/dashboard/favorite-chapters",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
+  }
+}

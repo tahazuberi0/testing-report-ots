@@ -23,6 +23,9 @@ export class EnrollmentsPage {
     // FALLBACK CSS: selectors.md Content Container / Card Element
     this.contentCard = page.locator('.css-1iob08');
 
+    // --- Newly resolved gap selectors ---
+    this.currentEnrollmentsHeading = page.getByText('Current Enrollments');
+
     // Not in enrollments_Page_selectors.md — needed to expand collapsed sidebar
     this.menuIcon = page.getByRole('img', { name: 'menu icon' });
   }

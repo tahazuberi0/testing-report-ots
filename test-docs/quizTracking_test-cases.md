@@ -168,3 +168,90 @@ The following are referenced in `quizTracking_userflow.md` (or needed for Quiz T
 | 11 | Dropdown option-level locators for Sort By values (Newest, Oldest, Highest, Lowest) | No locator |
 | 12 | Dropdown option-level locators for Show Results values (All, Latest 5, Latest 10) | No locator |
 | 13 | Sidebar alternative nav (Dashboard, Switch Class, Leaderboard, Logout) | Out of scope for this selectors file |
+
+---
+
+### New Test Cases (Gap Resolution — TC_QUIZTRACKING_011 through TC_QUIZTRACKING_016)
+
+These test cases leverage newly discovered selectors confirmed via live probing.
+
+#### TC_QUIZTRACKING_011: Summary stat cards are visible
+
+- **Test Case ID:** TC_QUIZTRACKING_011
+- **Title:** Summary stat cards are visible (Total Attempts, Quizzes Taken, Average Score, Best Score)
+- **Preconditions:** Authenticated student is on the Quiz Tracking page.
+- **Steps:**
+  1. Locate text **Total Attempts**.
+  2. Locate text **Quizzes Taken**.
+  3. Locate text **Average Score**.
+  4. Locate text **Best Score**.
+- **Test data needed:** `quizTrackingUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** All four summary stat card labels are visible on the page.
+- **Priority:** High
+
+#### TC_QUIZTRACKING_012: Quiz Attempts by Chapter section heading is visible
+
+- **Test Case ID:** TC_QUIZTRACKING_012
+- **Title:** Quiz Attempts by Chapter section heading is visible
+- **Preconditions:** Authenticated student is on the Quiz Tracking page.
+- **Steps:**
+  1. Locate text **Quiz Attempts by Chapter**.
+- **Test data needed:** `quizTrackingUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** The "Quiz Attempts by Chapter" section heading is visible.
+- **Priority:** High
+
+#### TC_QUIZTRACKING_013: Back button navigates away from Quiz Tracking
+
+- **Test Case ID:** TC_QUIZTRACKING_013
+- **Title:** Back button navigates away from Quiz Tracking
+- **Preconditions:** Authenticated student is on the Quiz Tracking page.
+- **Steps:**
+  1. Locate button **Back**.
+  2. Click the **Back** button.
+  3. Verify the URL no longer matches `/dashboard/quiz-tracking`.
+- **Test data needed:** `quizTrackingUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** Clicking the standalone Back button navigates the student away from Quiz Tracking without error.
+- **Priority:** High
+
+#### TC_QUIZTRACKING_014: Sort By dropdown shows sorting options
+
+- **Test Case ID:** TC_QUIZTRACKING_014
+- **Title:** Sort By dropdown shows sorting options (Newest First, Oldest First, Highest Score, Lowest Score)
+- **Preconditions:** Authenticated student is on the Quiz Tracking page.
+- **Steps:**
+  1. Click the **Sort By** paragraph trigger.
+  2. Locate option **Newest First**.
+  3. Locate option **Oldest First**.
+  4. Locate option **Highest Score**.
+  5. Locate option **Lowest Score**.
+- **Test data needed:** `quizTrackingUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** All four sorting options are visible in the Sort By dropdown.
+- **Priority:** Medium
+
+#### TC_QUIZTRACKING_015: Show Results dropdown shows result limit options
+
+- **Test Case ID:** TC_QUIZTRACKING_015
+- **Title:** Show Results dropdown shows result limit options
+- **Preconditions:** Authenticated student is on the Quiz Tracking page.
+- **Steps:**
+  1. Click the **Show Results** paragraph trigger.
+  2. Locate option **All Results**.
+  3. Locate option **Latest 5** (use `.first()` — MULTI(2)).
+  4. Locate option **Latest 10**.
+  5. Locate option **Latest 20**.
+  6. Locate option **Latest 50**.
+- **Test data needed:** `quizTrackingUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** All result limit options are visible in the Show Results dropdown.
+- **Priority:** Medium
+
+#### TC_QUIZTRACKING_016: Filter by Quiz dropdown shows All Quizzes option
+
+- **Test Case ID:** TC_QUIZTRACKING_016
+- **Title:** Filter by Quiz dropdown shows All Quizzes option
+- **Preconditions:** Authenticated student is on the Quiz Tracking page.
+- **Steps:**
+  1. Click the **Filter by Quiz** paragraph trigger.
+  2. Locate option **All Quizzes**.
+- **Test data needed:** `quizTrackingUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** The "All Quizzes" option is visible in the Filter by Quiz dropdown.
+- **Priority:** Medium

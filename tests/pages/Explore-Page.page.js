@@ -41,6 +41,17 @@ export class ExplorePage {
     this.digitalSchoolLetsStartBtn = page.getByRole('button', { name: "Let's Start!" });
     this.skillsAcademyLetsStartBtn = page.getByRole('button', { name: "Let's Start!" });
 
+    // --- Newly resolved gap selectors ---
+    this.homeLink = page.getByRole('link', { name: 'Home' }).first();
+    this.reelsText = page.getByText('Reels', { exact: true });
+    this.meetOurTeamText = page.getByText('Meet Our Team');
+    this.downloadAppText = page.getByText('Download App');
+    this.googlePlayLink = page.getByRole('link', { name: /google play/i });
+    this.stayUpdatedEmail = page.getByRole('textbox', { name: /email/i });
+    this.faqLink = page.getByRole('link', { name: 'FAQ' }).first();
+    this.privacyPolicyLink = page.getByRole('link', { name: 'Privacy Policy' });
+    this.termsOfUseLink = page.getByRole('link', { name: 'Terms of Use' });
+
     // FALLBACK nth: selectors.md visual locators — not used as primary assertions
     this.digitalSchoolCardImg = page.getByRole('img').nth(5);
     this.digitalSchoolIcon = page.locator('i').first();

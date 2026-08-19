@@ -409,4 +409,134 @@ test.describe('OTS EdTech Dashboard Page', () => {
       await expect(dashboardPage.yourProgressHeading).toBeVisible();
     });
   });
+
+  test('TC_DASH_016: Day Streak gamification text is visible', async () => {
+    const data = testData.TC_DASH_016;
+    await annotate({
+      id: 'TC_DASH_016',
+      title: 'Day Streak gamification text is visible',
+      priority: 'Medium',
+      description: 'Day streak gamification text is visible on Dashboard.',
+    });
+
+    await allure.step('Sign in and open Dashboard', async () => {
+      await dashboardPage.ensureAuthenticatedDashboard(
+        data.validStudentSession,
+        data.loginUrl,
+        data.dashboardUrl
+      );
+    });
+    await allure.step('Verify Day Streak text is visible', async () => {
+      await expect(dashboardPage.dayStreakText).toBeVisible();
+    });
+  });
+
+  test('TC_DASH_017: Accumulated XP is visible', async () => {
+    const data = testData.TC_DASH_017;
+    await annotate({
+      id: 'TC_DASH_017',
+      title: 'Accumulated XP is visible',
+      priority: 'Medium',
+      description: 'Accumulated XP count is visible on Dashboard.',
+    });
+
+    await allure.step('Sign in and open Dashboard', async () => {
+      await dashboardPage.ensureAuthenticatedDashboard(
+        data.validStudentSession,
+        data.loginUrl,
+        data.dashboardUrl
+      );
+    });
+    await allure.step('Verify XP text is visible', async () => {
+      await expect(dashboardPage.xpText).toBeVisible();
+    });
+  });
+
+  test('TC_DASH_018: Weekly Progress section is visible', async () => {
+    const data = testData.TC_DASH_018;
+    await annotate({
+      id: 'TC_DASH_018',
+      title: 'Weekly Progress section is visible',
+      priority: 'Medium',
+      description: 'Weekly Progress and weekly goal text are visible on Dashboard.',
+    });
+
+    await allure.step('Sign in and open Dashboard', async () => {
+      await dashboardPage.ensureAuthenticatedDashboard(
+        data.validStudentSession,
+        data.loginUrl,
+        data.dashboardUrl
+      );
+    });
+    await allure.step('Verify Weekly Progress and goal text', async () => {
+      await expect(dashboardPage.weeklyProgressText).toBeVisible();
+      await expect(dashboardPage.weeklyGoalText).toBeVisible();
+    });
+  });
+
+  test('TC_DASH_019: Feedback sidebar link is visible', async () => {
+    const data = testData.TC_DASH_019;
+    await annotate({
+      id: 'TC_DASH_019',
+      title: 'Feedback sidebar link is visible',
+      priority: 'Low',
+      description: 'Feedback link is visible in the sidebar.',
+    });
+
+    await allure.step('Sign in and open Dashboard', async () => {
+      await dashboardPage.ensureAuthenticatedDashboard(
+        data.validStudentSession,
+        data.loginUrl,
+        data.dashboardUrl
+      );
+    });
+    await allure.step('Expand sidebar and verify Feedback', async () => {
+      await dashboardPage.expandSidebarIfCollapsed();
+      await expect(dashboardPage.feedbackText).toBeVisible();
+    });
+  });
+
+  test('TC_DASH_020: Logout sidebar link is visible', async () => {
+    const data = testData.TC_DASH_020;
+    await annotate({
+      id: 'TC_DASH_020',
+      title: 'Logout sidebar link is visible',
+      priority: 'Medium',
+      description: 'Logout link is visible in the sidebar.',
+    });
+
+    await allure.step('Sign in and open Dashboard', async () => {
+      await dashboardPage.ensureAuthenticatedDashboard(
+        data.validStudentSession,
+        data.loginUrl,
+        data.dashboardUrl
+      );
+    });
+    await allure.step('Expand sidebar and verify Logout', async () => {
+      await dashboardPage.expandSidebarIfCollapsed();
+      await expect(dashboardPage.logoutText).toBeVisible();
+    });
+  });
+
+  test('TC_DASH_021: Subject cards are individually identifiable by name', async () => {
+    const data = testData.TC_DASH_021;
+    await annotate({
+      id: 'TC_DASH_021',
+      title: 'Subject cards are individually identifiable by name',
+      priority: 'Medium',
+      description: 'COMPUTER and MATHEMATICS subject name texts are visible on Dashboard.',
+    });
+
+    await allure.step('Sign in and open Dashboard', async () => {
+      await dashboardPage.ensureAuthenticatedDashboard(
+        data.validStudentSession,
+        data.loginUrl,
+        data.dashboardUrl
+      );
+    });
+    await allure.step('Verify subject card names are visible', async () => {
+      await expect(dashboardPage.subjectComputer).toBeVisible();
+      await expect(dashboardPage.subjectMathematics).toBeVisible();
+    });
+  });
 });

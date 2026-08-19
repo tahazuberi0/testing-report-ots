@@ -271,4 +271,157 @@ test.describe('OTS EdTech Quiz Performance Tracking', () => {
       await expect(quizPage.filtersHeading).toHaveCount(0);
     });
   });
+
+  test('TC_QUIZTRACKING_011: Summary stat cards are visible', async () => {
+    const data = testData.TC_QUIZTRACKING_011;
+    await annotate({
+      id: 'TC_QUIZTRACKING_011',
+      title: 'Summary stat cards are visible',
+      priority: 'High',
+      description:
+        'Total Attempts, Quizzes Taken, Average Score, and Best Score stat cards are visible.',
+    });
+
+    await allure.step('Sign in and open Quiz Tracking', async () => {
+      await quizPage.ensureAuthenticatedQuizTracking(
+        data.validStudentSession,
+        data.loginUrl,
+        data.quizTrackingUrl
+      );
+    });
+    await allure.step('Verify summary stat cards', async () => {
+      await expect(quizPage.totalAttemptsText).toBeVisible();
+      await expect(quizPage.quizzesTakenText).toBeVisible();
+      await expect(quizPage.averageScoreText).toBeVisible();
+      await expect(quizPage.bestScoreText).toBeVisible();
+    });
+  });
+
+  test('TC_QUIZTRACKING_012: Quiz Attempts by Chapter section heading is visible', async () => {
+    const data = testData.TC_QUIZTRACKING_012;
+    await annotate({
+      id: 'TC_QUIZTRACKING_012',
+      title: 'Quiz Attempts by Chapter section heading is visible',
+      priority: 'High',
+      description: 'Quiz Attempts by Chapter heading is visible on the page.',
+    });
+
+    await allure.step('Sign in and open Quiz Tracking', async () => {
+      await quizPage.ensureAuthenticatedQuizTracking(
+        data.validStudentSession,
+        data.loginUrl,
+        data.quizTrackingUrl
+      );
+    });
+    await allure.step('Verify section heading', async () => {
+      await expect(quizPage.quizAttemptsByChapterHeading).toBeVisible();
+    });
+  });
+
+  test('TC_QUIZTRACKING_013: Back button navigates away from Quiz Tracking', async ({ page }) => {
+    const data = testData.TC_QUIZTRACKING_013;
+    await annotate({
+      id: 'TC_QUIZTRACKING_013',
+      title: 'Back button navigates away from Quiz Tracking',
+      priority: 'High',
+      description: 'Clicking the standalone Back button navigates away from Quiz Tracking.',
+    });
+
+    await allure.step('Sign in and open Quiz Tracking', async () => {
+      await quizPage.ensureAuthenticatedQuizTracking(
+        data.validStudentSession,
+        data.loginUrl,
+        data.quizTrackingUrl
+      );
+    });
+    await allure.step('Click Back button', async () => {
+      await quizPage.backButton.click();
+    });
+    await allure.step('Verify left Quiz Tracking page', async () => {
+      await expect(page).not.toHaveURL(/\/dashboard\/quiz-tracking$/i);
+      await expect(page.locator('body')).toBeVisible();
+    });
+  });
+
+  test('TC_QUIZTRACKING_014: Sort By dropdown shows sorting options', async () => {
+    const data = testData.TC_QUIZTRACKING_014;
+    await annotate({
+      id: 'TC_QUIZTRACKING_014',
+      title: 'Sort By dropdown shows sorting options',
+      priority: 'Medium',
+      description:
+        'Sort By dropdown reveals Newest First, Oldest First, Highest Score, Lowest Score.',
+    });
+
+    await allure.step('Sign in and open Quiz Tracking', async () => {
+      await quizPage.ensureAuthenticatedQuizTracking(
+        data.validStudentSession,
+        data.loginUrl,
+        data.quizTrackingUrl
+      );
+    });
+    await allure.step('Open Sort By dropdown', async () => {
+      await quizPage.openSortByDropdown();
+    });
+    await allure.step('Verify sorting options', async () => {
+      await expect(quizPage.page.getByRole('option', { name: 'Newest First' })).toBeVisible();
+      await expect(quizPage.page.getByRole('option', { name: 'Oldest First' })).toBeVisible();
+      await expect(quizPage.page.getByRole('option', { name: 'Highest Score' })).toBeVisible();
+      await expect(quizPage.page.getByRole('option', { name: 'Lowest Score' })).toBeVisible();
+    });
+  });
+
+  test('TC_QUIZTRACKING_015: Show Results dropdown shows result limit options', async () => {
+    const data = testData.TC_QUIZTRACKING_015;
+    await annotate({
+      id: 'TC_QUIZTRACKING_015',
+      title: 'Show Results dropdown shows result limit options',
+      priority: 'Medium',
+      description: 'Show Results dropdown reveals All Results, Latest 5/10/20/50.',
+    });
+
+    await allure.step('Sign in and open Quiz Tracking', async () => {
+      await quizPage.ensureAuthenticatedQuizTracking(
+        data.validStudentSession,
+        data.loginUrl,
+        data.quizTrackingUrl
+      );
+    });
+    await allure.step('Open Show Results dropdown', async () => {
+      await quizPage.openShowResultsDropdown();
+    });
+    await allure.step('Verify result limit options', async () => {
+      await expect(quizPage.page.getByRole('option', { name: 'All Results' })).toBeVisible();
+      await expect(
+        quizPage.page.getByRole('option', { name: 'Latest 5' }).first()
+      ).toBeVisible();
+      await expect(quizPage.page.getByRole('option', { name: 'Latest 10' })).toBeVisible();
+      await expect(quizPage.page.getByRole('option', { name: 'Latest 20' })).toBeVisible();
+      await expect(quizPage.page.getByRole('option', { name: 'Latest 50' })).toBeVisible();
+    });
+  });
+
+  test('TC_QUIZTRACKING_016: Filter by Quiz dropdown shows All Quizzes option', async () => {
+    const data = testData.TC_QUIZTRACKING_016;
+    await annotate({
+      id: 'TC_QUIZTRACKING_016',
+      title: 'Filter by Quiz dropdown shows All Quizzes option',
+      priority: 'Medium',
+      description: 'Filter by Quiz dropdown reveals the All Quizzes option.',
+    });
+
+    await allure.step('Sign in and open Quiz Tracking', async () => {
+      await quizPage.ensureAuthenticatedQuizTracking(
+        data.validStudentSession,
+        data.loginUrl,
+        data.quizTrackingUrl
+      );
+    });
+    await allure.step('Open Filter by Quiz dropdown', async () => {
+      await quizPage.openFilterByQuizDropdown();
+    });
+    await allure.step('Verify All Quizzes option', async () => {
+      await expect(quizPage.page.getByRole('option', { name: 'All Quizzes' })).toBeVisible();
+    });
+  });
 });

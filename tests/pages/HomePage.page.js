@@ -106,6 +106,12 @@ export class HomePage {
     this.edFunLink = page.getByRole('link', { name: 'EdFun Fun & engaging learning' });
     this.subscribeOurChannelsLink = page.getByRole('link', { name: 'Subscribe Our Channels' });
 
+    // --- Newly resolved gap selectors ---
+    this.newOtsReelsText = page.getByText('New: OTS Reels');
+    this.watchHowItWorksText = page.getByText('Watch How It Works');
+    this.contactEmailText = page.getByText('info@offtheschool.io');
+    this.courseCountBadge = page.getByText('100+ Courses').first();
+
     // --- Footer ---
     this.stayUpdatedText = page.getByText('Stay UpdatedSubscribe to our');
     // FALLBACK nth: selectors.md uses filter + .nth(5) for footer tagline container

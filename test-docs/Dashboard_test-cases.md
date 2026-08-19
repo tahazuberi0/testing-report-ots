@@ -236,3 +236,75 @@ The following are referenced in `Dashboard_userflow.md` (or needed for Main Dash
 | 8 | Profile / account entry from Main Dashboard shell | Profile section lists `img` name **Taha** only — not treated as a Main Dashboard primary selector for this heading |
 
 **Additional note:** Secondary flow outcomes that depend on Day Streak / Best Streak / XP / Weekly Progress cannot be automated until those selectors are added. Tertiary Feedback and Logout cannot be automated until selectors are added.
+
+---
+
+### Newly Discovered Selector Test Cases
+
+#### TC_DASH_016: Day Streak gamification text is visible
+
+- **Test Case ID:** TC_DASH_016
+- **Title:** Day Streak gamification text is visible
+- **Preconditions:** Authenticated student on Dashboard.
+- **Steps:**
+  1. Locate text matching /Day Streak/i.
+- **Test data needed:** `dashboardUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** Day streak text is visible.
+- **Priority:** Medium
+
+#### TC_DASH_017: Accumulated XP is visible
+
+- **Test Case ID:** TC_DASH_017
+- **Title:** Accumulated XP is visible
+- **Preconditions:** Authenticated student on Dashboard.
+- **Steps:**
+  1. Locate text matching /\d[\d,]* XP/.
+- **Test data needed:** `dashboardUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** XP count is visible.
+- **Priority:** Medium
+
+#### TC_DASH_018: Weekly Progress section is visible
+
+- **Test Case ID:** TC_DASH_018
+- **Title:** Weekly Progress section is visible
+- **Preconditions:** Authenticated student on Dashboard.
+- **Steps:**
+  1. Locate text "Weekly Progress".
+  2. Locate text matching /weekly goal/i.
+- **Test data needed:** `dashboardUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** Weekly Progress and goal text are visible.
+- **Priority:** Medium
+
+#### TC_DASH_019: Feedback sidebar link is visible
+
+- **Test Case ID:** TC_DASH_019
+- **Title:** Feedback sidebar link is visible
+- **Preconditions:** Authenticated student on Dashboard, sidebar expanded.
+- **Steps:**
+  1. Locate text "Feedback".
+- **Test data needed:** `dashboardUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** Feedback link is visible in sidebar.
+- **Priority:** Low
+
+#### TC_DASH_020: Logout sidebar link is visible
+
+- **Test Case ID:** TC_DASH_020
+- **Title:** Logout sidebar link is visible
+- **Preconditions:** Authenticated student on Dashboard, sidebar expanded.
+- **Steps:**
+  1. Locate text "Logout" (first match).
+- **Test data needed:** `dashboardUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** Logout link is visible in sidebar.
+- **Priority:** Medium
+
+#### TC_DASH_021: Subject cards are individually identifiable by name
+
+- **Test Case ID:** TC_DASH_021
+- **Title:** Subject cards are individually identifiable by name
+- **Preconditions:** Authenticated student on Dashboard with enrollments.
+- **Steps:**
+  1. Locate text COMPUTER.
+  2. Locate text MATHEMATICS.
+- **Test data needed:** `dashboardUrl`, `loginUrl`, `validStudentSession`
+- **Expected result:** At least COMPUTER and MATHEMATICS subject name texts are visible.
+- **Priority:** Medium

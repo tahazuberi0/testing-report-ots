@@ -46,6 +46,15 @@ export class DashboardPage {
     this.startLearningButton = page.getByRole('button', { name: 'Start Learning' }).first();
 
     this.closeButton = page.getByRole('button', { name: 'Close' });
+
+    this.dayStreakText = page.getByText(/Day Streak/i);
+    this.xpText = page.getByText(/\d[\d,]* XP/);
+    this.weeklyProgressText = page.getByText('Weekly Progress');
+    this.weeklyGoalText = page.getByText(/weekly goal/i);
+    this.feedbackText = page.getByText('Feedback');
+    this.logoutText = page.getByText('Logout', { exact: true }).first();
+    this.subjectComputer = page.getByText(/^computer$/i);
+    this.subjectMathematics = page.getByText(/^mathematics$/i);
     this.lectureDialog = page.getByRole('dialog');
 
     this.switchClassesHeading = page.getByRole('heading', { name: 'Switch Classes' });

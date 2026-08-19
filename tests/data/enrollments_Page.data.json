@@ -70,5 +70,13 @@
       "email": "taha.zuberi@offtheschool.io",
       "password": "1234This."
     }
+  },
+  "TC_ENROLL_010": {
+    "manageEnrollmentUrl": "https://edu.offtheschool.io/dashboard/manage-enrollment",
+    "loginUrl": "https://edu.offtheschool.io/login",
+    "validStudentSession": {
+      "email": "taha.zuberi@offtheschool.io",
+      "password": "1234This."
+    }
   }
 }
