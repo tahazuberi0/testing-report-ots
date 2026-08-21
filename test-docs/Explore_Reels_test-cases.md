@@ -151,6 +151,59 @@ The following are referenced in `Explore_Page_userflow.md` (or needed for Explor
 
 **Additional naming note:** Userflow **[Explore Courses]** vs selector button **Let's Start!** — TC_EXPLORE_001–009 use the selector name.
 
+#### TC_EXPLORE_010: Header navigation links Home, Reels, Meet Our Team are visible
+
+- **Test Case ID:** TC_EXPLORE_010
+- **Title:** Header navigation links Home, Reels, Meet Our Team are visible
+- **Preconditions:** User can reach `https://edu.offtheschool.io/explore`.
+- **Steps:**
+  1. Navigate to the Explore page.
+  2. Locate link "Home" (first).
+  3. Locate text "Reels" (exact).
+  4. Locate text "Meet Our Team".
+- **Test data needed:** `url`
+- **Expected result:** All three navigation elements are visible.
+- **Priority:** Medium
+
+#### TC_EXPLORE_011: Footer links FAQ, Privacy Policy, Terms of Use are visible
+
+- **Test Case ID:** TC_EXPLORE_011
+- **Title:** Footer links FAQ, Privacy Policy, Terms of Use are visible
+- **Preconditions:** User can reach `https://edu.offtheschool.io/explore`.
+- **Steps:**
+  1. Navigate to the Explore page.
+  2. Locate link FAQ (first).
+  3. Locate link Privacy Policy.
+  4. Locate link Terms of Use.
+- **Test data needed:** `url`
+- **Expected result:** All footer links are visible.
+- **Priority:** Low
+
+#### TC_EXPLORE_012: Footer Download App and Google Play are visible
+
+- **Test Case ID:** TC_EXPLORE_012
+- **Title:** Footer Download App and Google Play are visible
+- **Preconditions:** User can reach `https://edu.offtheschool.io/explore`.
+- **Steps:**
+  1. Navigate to the Explore page.
+  2. Locate text "Download App".
+  3. Locate link Google Play.
+- **Test data needed:** `url`
+- **Expected result:** Both Download App text and Google Play link are visible.
+- **Priority:** Low
+
+#### TC_EXPLORE_013: Footer Stay Updated email field is present
+
+- **Test Case ID:** TC_EXPLORE_013
+- **Title:** Footer Stay Updated email field is present
+- **Preconditions:** User can reach `https://edu.offtheschool.io/explore`.
+- **Steps:**
+  1. Navigate to the Explore page.
+  2. Locate textbox with name matching email.
+- **Test data needed:** `url`
+- **Expected result:** Email input field is visible.
+- **Priority:** Low
+
 ---
 
 ## Reels Page

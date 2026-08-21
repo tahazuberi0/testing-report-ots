@@ -256,4 +256,25 @@ test.describe('OTS EdTech Enrollments Page', () => {
       await expect(page.getByText(/stack|exception|syntax error/i)).toHaveCount(0);
     });
   });
+
+  test('TC_ENROLL_010: Current Enrollments heading is visible', async () => {
+    const data = testData.TC_ENROLL_010;
+    await annotate({
+      id: 'TC_ENROLL_010',
+      title: 'Current Enrollments heading is visible',
+      priority: 'High',
+      description: 'Current Enrollments heading is visible on Manage Enrollments page.',
+    });
+
+    await allure.step('Sign in and open Manage Enrollments', async () => {
+      await enrollmentsPage.ensureAuthenticatedEnrollments(
+        data.validStudentSession,
+        data.loginUrl,
+        data.manageEnrollmentUrl
+      );
+    });
+    await allure.step('Verify Current Enrollments heading', async () => {
+      await expect(enrollmentsPage.currentEnrollmentsHeading).toBeVisible();
+    });
+  });
 });

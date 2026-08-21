@@ -249,4 +249,80 @@ test.describe('OTS EdTech Explore Page', () => {
       await expect(explorePage.digitalSchoolStartBtn).toBeEnabled();
     });
   });
+
+  test('TC_EXPLORE_010: Header navigation links Home, Reels, Meet Our Team are visible', async () => {
+    const data = testData.TC_EXPLORE_010;
+    await meta({
+      id: 'TC_EXPLORE_010',
+      title: 'Header navigation links Home, Reels, Meet Our Team are visible',
+      priority: 'Medium',
+      description: 'Header nav elements Home link, Reels text, Meet Our Team text are visible on Explore.',
+    });
+
+    await allure.step('Navigate to Explore', async () => {
+      await explorePage.goto(data.url);
+    });
+    await allure.step('Verify header navigation elements', async () => {
+      await expect(explorePage.homeLink).toBeVisible();
+      await expect(explorePage.reelsText).toBeVisible();
+      await expect(explorePage.meetOurTeamText).toBeVisible();
+    });
+  });
+
+  test('TC_EXPLORE_011: Footer links FAQ, Privacy Policy, Terms of Use are visible', async () => {
+    const data = testData.TC_EXPLORE_011;
+    await meta({
+      id: 'TC_EXPLORE_011',
+      title: 'Footer links FAQ, Privacy Policy, Terms of Use are visible',
+      priority: 'Low',
+      description: 'Footer quick links FAQ, Privacy Policy, Terms of Use are visible on Explore.',
+    });
+
+    await allure.step('Navigate to Explore', async () => {
+      await explorePage.goto(data.url);
+    });
+    await allure.step('Verify footer links', async () => {
+      await explorePage.faqLink.scrollIntoViewIfNeeded();
+      await expect(explorePage.faqLink).toBeVisible();
+      await expect(explorePage.privacyPolicyLink).toBeVisible();
+      await expect(explorePage.termsOfUseLink).toBeVisible();
+    });
+  });
+
+  test('TC_EXPLORE_012: Footer Download App and Google Play are visible', async () => {
+    const data = testData.TC_EXPLORE_012;
+    await meta({
+      id: 'TC_EXPLORE_012',
+      title: 'Footer Download App and Google Play are visible',
+      priority: 'Low',
+      description: 'Footer Download App text and Google Play link are visible on Explore.',
+    });
+
+    await allure.step('Navigate to Explore', async () => {
+      await explorePage.goto(data.url);
+    });
+    await allure.step('Verify Download App and Google Play', async () => {
+      await explorePage.downloadAppText.scrollIntoViewIfNeeded();
+      await expect(explorePage.downloadAppText).toBeVisible();
+      await expect(explorePage.googlePlayLink).toBeVisible();
+    });
+  });
+
+  test('TC_EXPLORE_013: Footer Stay Updated email field is present', async () => {
+    const data = testData.TC_EXPLORE_013;
+    await meta({
+      id: 'TC_EXPLORE_013',
+      title: 'Footer Stay Updated email field is present',
+      priority: 'Low',
+      description: 'Footer Stay Updated email input field is visible on Explore.',
+    });
+
+    await allure.step('Navigate to Explore', async () => {
+      await explorePage.goto(data.url);
+    });
+    await allure.step('Verify email input', async () => {
+      await explorePage.stayUpdatedEmail.scrollIntoViewIfNeeded();
+      await expect(explorePage.stayUpdatedEmail).toBeVisible();
+    });
+  });
 });

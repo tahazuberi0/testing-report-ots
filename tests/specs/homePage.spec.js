@@ -654,4 +654,73 @@ test.describe('OTS EdTech Homepage', () => {
       await expect(homePage.reelsNav.first()).toBeVisible();
     });
   });
+
+  test('TC_HOME_026: "New: OTS Reels" hero CTA is visible', async () => {
+    const data = testData.TC_HOME_026;
+    await meta({
+      id: 'TC_HOME_026',
+      title: '"New: OTS Reels" hero CTA is visible',
+      priority: 'Medium',
+      description: 'Hero CTA text "New: OTS Reels" is visible on the homepage.',
+    });
+
+    await allure.step('Open homepage', async () => {
+      await homePage.goto(data.url);
+    });
+    await allure.step('Verify New: OTS Reels text', async () => {
+      await expect(homePage.newOtsReelsText).toBeVisible();
+    });
+  });
+
+  test('TC_HOME_027: "Watch How It Works" text is visible', async () => {
+    const data = testData.TC_HOME_027;
+    await meta({
+      id: 'TC_HOME_027',
+      title: '"Watch How It Works" text is visible',
+      priority: 'Medium',
+      description: 'CTA text "Watch How It Works" is visible on the homepage.',
+    });
+
+    await allure.step('Open homepage', async () => {
+      await homePage.goto(data.url);
+    });
+    await allure.step('Verify Watch How It Works text', async () => {
+      await expect(homePage.watchHowItWorksText).toBeVisible();
+    });
+  });
+
+  test('TC_HOME_028: Contact email info@offtheschool.io is visible in footer', async () => {
+    const data = testData.TC_HOME_028;
+    await meta({
+      id: 'TC_HOME_028',
+      title: 'Contact email info@offtheschool.io is visible in footer',
+      priority: 'Low',
+      description: 'Footer contact email info@offtheschool.io is visible.',
+    });
+
+    await allure.step('Open homepage', async () => {
+      await homePage.goto(data.url);
+    });
+    await allure.step('Verify contact email', async () => {
+      await homePage.contactEmailText.scrollIntoViewIfNeeded();
+      await expect(homePage.contactEmailText).toBeVisible();
+    });
+  });
+
+  test('TC_HOME_029: Course count badge "100+ Courses" is visible', async () => {
+    const data = testData.TC_HOME_029;
+    await meta({
+      id: 'TC_HOME_029',
+      title: 'Course count badge "100+ Courses" is visible',
+      priority: 'Low',
+      description: 'Course count badge "100+ Courses" is visible on the homepage.',
+    });
+
+    await allure.step('Open homepage', async () => {
+      await homePage.goto(data.url);
+    });
+    await allure.step('Verify 100+ Courses badge', async () => {
+      await expect(homePage.courseCountBadge).toBeVisible();
+    });
+  });
 });

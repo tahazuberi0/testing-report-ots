@@ -292,4 +292,73 @@ test.describe('OTS EdTech My Profile Page', () => {
       await expect(profilePage.page.locator('body')).toBeVisible();
     });
   });
+
+  // --- TC_PROFILE_017 ---
+  test('TC_PROFILE_017: Date of Birth field is visible on Personal Info tab', async () => {
+    const data = testData.TC_PROFILE_017;
+    await annotate({ id: 'TC_PROFILE_017', title: 'Date of Birth field is visible on Personal Info tab', priority: 'Medium', description: 'Date of Birth label and input are visible on Personal Info tab.' });
+
+    await allure.step('Sign in and open Profile', async () => {
+      await profilePage.ensureAuthenticatedProfile(data.validStudentSession, data.loginUrl, data.profileUrl);
+    });
+    await allure.step('Verify Date of Birth', async () => {
+      await expect(profilePage.dateOfBirthLabel).toBeVisible();
+      await expect(profilePage.dateOfBirthInput).toBeVisible();
+    });
+  });
+
+  // --- TC_PROFILE_018 ---
+  test('TC_PROFILE_018: Profile completion percentage is displayed', async () => {
+    const data = testData.TC_PROFILE_018;
+    await annotate({ id: 'TC_PROFILE_018', title: 'Profile completion percentage is displayed', priority: 'Medium', description: 'Profile completion percentage text is visible.' });
+
+    await allure.step('Sign in and open Profile', async () => {
+      await profilePage.ensureAuthenticatedProfile(data.validStudentSession, data.loginUrl, data.profileUrl);
+    });
+    await allure.step('Verify completion percentage', async () => {
+      await expect(profilePage.profileCompletionPercent).toBeVisible();
+    });
+  });
+
+  // --- TC_PROFILE_019 ---
+  test('TC_PROFILE_019: Back button is visible', async () => {
+    const data = testData.TC_PROFILE_019;
+    await annotate({ id: 'TC_PROFILE_019', title: 'Back button is visible', priority: 'Medium', description: 'Back button is visible on Profile page.' });
+
+    await allure.step('Sign in and open Profile', async () => {
+      await profilePage.ensureAuthenticatedProfile(data.validStudentSession, data.loginUrl, data.profileUrl);
+    });
+    await allure.step('Verify Back button', async () => {
+      await expect(profilePage.backButton).toBeVisible();
+    });
+  });
+
+  // --- TC_PROFILE_020 ---
+  test('TC_PROFILE_020: File upload input exists for profile picture', async () => {
+    const data = testData.TC_PROFILE_020;
+    await annotate({ id: 'TC_PROFILE_020', title: 'File upload input exists for profile picture', priority: 'Low', description: 'File upload input[type="file"] is present in DOM.' });
+
+    await allure.step('Sign in and open Profile', async () => {
+      await profilePage.ensureAuthenticatedProfile(data.validStudentSession, data.loginUrl, data.profileUrl);
+    });
+    await allure.step('Verify file upload input', async () => {
+      await expect(profilePage.fileUploadInput).toHaveCount(1);
+    });
+  });
+
+  // --- TC_PROFILE_021 ---
+  test('TC_PROFILE_021: Educational Information heading appears after switching to Educational Info tab', async () => {
+    const data = testData.TC_PROFILE_021;
+    await annotate({ id: 'TC_PROFILE_021', title: 'Educational Information heading appears after switching to Educational Info tab', priority: 'High', description: 'Educational Information heading visible after clicking Educational Info tab.' });
+
+    await allure.step('Sign in and open Profile', async () => {
+      await profilePage.ensureAuthenticatedProfile(data.validStudentSession, data.loginUrl, data.profileUrl);
+    });
+    await allure.step('Switch to Educational Info tab', async () => {
+      await profilePage.educationalInfoTab.click();
+    });
+    await allure.step('Verify Educational Information heading', async () => {
+      await expect(profilePage.educationalInfoHeading).toBeVisible();
+    });
+  });
 });

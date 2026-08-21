@@ -1,4 +1,4 @@
-import { test, expect, annotate } from '../fixtures/loginFixtures.js';
+import { test, expect, annotate } from '../../fixtures/loginFixtures.js';
 
 /** App redirects authenticated users to /dashboard (docs also mention /home). */
 const POST_LOGIN_URL = /\/(home|dashboard)/i;

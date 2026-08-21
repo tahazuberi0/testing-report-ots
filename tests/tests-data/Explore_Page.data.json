@@ -29,5 +29,17 @@
   "TC_EXPLORE_009": {
     "url": "https://edu.offtheschool.io/explore",
     "digitalSchoolUrlPattern": "digitalschool"
+  },
+  "TC_EXPLORE_010": {
+    "url": "https://edu.offtheschool.io/explore"
+  },
+  "TC_EXPLORE_011": {
+    "url": "https://edu.offtheschool.io/explore"
+  },
+  "TC_EXPLORE_012": {
+    "url": "https://edu.offtheschool.io/explore"
+  },
+  "TC_EXPLORE_013": {
+    "url": "https://edu.offtheschool.io/explore"
   }
 }
