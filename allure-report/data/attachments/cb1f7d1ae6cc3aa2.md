@@ -1,0 +1,44 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: specs\homePage.spec.js >> OTS EdTech Homepage >> TC_HOME_001: Homepage loads with hero value proposition visible
+- Location: tests\specs\homePage.spec.js:37:3
+
+# Error details
+
+```
+TimeoutError: page.goto: Timeout 45000ms exceeded.
+Call log:
+  - navigating to "https://edu.offtheschool.io/", waiting until "load"
+
+```
+
+```
+Tearing down "context" exceeded the test timeout of 60000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - img [ref=e22]
+      - generic:
+        - img "OTS Logo"
+    - generic [ref=e25]:
+      - paragraph [ref=e27]: Loading
+      - paragraph [ref=e32]: Preparing your experience
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"
+```

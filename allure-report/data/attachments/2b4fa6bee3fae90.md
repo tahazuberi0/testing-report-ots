@@ -1,0 +1,753 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: specs\homePage.spec.js >> OTS EdTech Homepage >> TC_HOME_023: Footer Stay Updated and platform tagline are visible
+- Location: tests\specs\homePage.spec.js:587:3
+
+# Error details
+
+```
+Tearing down "context" exceeded the test timeout of 60000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - img [ref=e7] [cursor=pointer]
+      - generic [ref=e8]:
+        - paragraph [ref=e9] [cursor=pointer]: Home
+        - paragraph [ref=e10] [cursor=pointer]: Explore
+        - paragraph [ref=e11] [cursor=pointer]: Reels
+        - paragraph [ref=e12] [cursor=pointer]: Meet Our Team
+        - paragraph [ref=e13] [cursor=pointer]: Contact Us
+      - button [ref=e15] [cursor=pointer]:
+        - generic:
+          - img
+        - img [ref=e17]
+    - button [ref=e19] [cursor=pointer]:
+      - img [ref=e20]
+    - main [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - button [ref=e28] [cursor=pointer]:
+            - img [ref=e29]
+          - generic:
+            - generic [ref=e65] [cursor=pointer]:
+              - img [ref=e68]
+              - paragraph [ref=e70]: Maths
+            - generic [ref=e72] [cursor=pointer]:
+              - img [ref=e75]
+              - paragraph [ref=e77]: Urdu
+            - generic [ref=e79] [cursor=pointer]:
+              - img [ref=e82]
+              - paragraph [ref=e84]: Computer
+            - generic [ref=e86] [cursor=pointer]:
+              - img [ref=e89]
+              - paragraph [ref=e91]: English
+            - generic [ref=e93] [cursor=pointer]:
+              - img [ref=e96]
+              - paragraph [ref=e98]: Physics
+            - generic [ref=e100] [cursor=pointer]:
+              - img [ref=e103]
+              - paragraph [ref=e105]: Biology
+            - generic [ref=e107] [cursor=pointer]:
+              - img [ref=e110]
+              - paragraph [ref=e112]: Science
+            - generic [ref=e114] [cursor=pointer]:
+              - img [ref=e117]
+              - paragraph [ref=e119]: Chemistry
+          - generic [ref=e121]:
+            - generic [ref=e123]:
+              - img [ref=e124]
+              - paragraph [ref=e126]: Pakistan's First Free EdTech Platform
+              - img [ref=e127]
+            - heading [level=2] [ref=e130]: Your Journey to
+            - paragraph [ref=e133]: Free,world-class education for every student in Pakistan from Kindergarten to Class 12 with interactive lessons & expert teachers.
+            - generic [ref=e136]:
+              - generic:
+                - img
+              - textbox [ref=e137]:
+                - /placeholder: Search chapters by title (e.g., Grammar, Algebra)
+            - generic [ref=e138]:
+              - link [ref=e139] [cursor=pointer]:
+                - /url: /explore
+                - text: Start Learning — It's Free
+                - img [ref=e141]
+              - link [ref=e143] [cursor=pointer]:
+                - /url: /reels
+                - img [ref=e145]
+                - text: "New: OTS Reels"
+              - link [ref=e147] [cursor=pointer]:
+                - /url: https://www.youtube.com/@otsedtech
+                - img [ref=e149]
+                - text: Watch How It Works
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - paragraph [ref=e157]: Explore School
+              - paragraph [ref=e158]: Digital School
+            - link [ref=e160] [cursor=pointer]:
+              - /url: /explore/digitalschool
+              - img [ref=e162]
+              - text: View All Categories
+          - generic [ref=e167]:
+            - link [ref=e169] [cursor=pointer]:
+              - /url: /explore
+              - generic [ref=e174]:
+                - generic [ref=e175]:
+                  - img [ref=e177]
+                  - paragraph [ref=e180]: Kindergarten
+                  - paragraph [ref=e181]: Early learning and foundational skills for young learners
+                - generic [ref=e182]:
+                  - paragraph [ref=e183]: 50+ Courses
+                  - img [ref=e185]
+            - link [ref=e188] [cursor=pointer]:
+              - /url: /explore
+              - generic [ref=e193]:
+                - generic [ref=e194]:
+                  - img [ref=e196]
+                  - paragraph [ref=e199]: Primary
+                  - paragraph [ref=e200]: Classes 1-5 with core subjects and activities
+                - generic [ref=e201]:
+                  - paragraph [ref=e202]: 80+ Courses
+                  - img [ref=e204]
+            - link [ref=e207] [cursor=pointer]:
+              - /url: /explore
+              - generic [ref=e212]:
+                - generic [ref=e213]:
+                  - img [ref=e215]
+                  - paragraph [ref=e218]: Secondary
+                  - paragraph [ref=e219]: Classes 6-8 with comprehensive academic courses
+                - generic [ref=e220]:
+                  - paragraph [ref=e221]: 100+ Courses
+                  - img [ref=e223]
+            - link [ref=e226] [cursor=pointer]:
+              - /url: /explore
+              - generic [ref=e231]:
+                - generic [ref=e232]:
+                  - img [ref=e234]
+                  - paragraph [ref=e237]: Higher Secondary
+                  - paragraph [ref=e238]: Classes 9-12 with advanced subjects and career prep
+                - generic [ref=e239]:
+                  - paragraph [ref=e240]: 120+ Courses
+                  - img [ref=e242]
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - paragraph [ref=e246]: Applied Learning
+              - paragraph [ref=e247]: Skilled Courses
+            - link [ref=e249] [cursor=pointer]:
+              - /url: /explore/skilledbased
+              - img [ref=e251]
+              - text: View All Skills
+        - generic [ref=e258]:
+          - generic [ref=e259]:
+            - paragraph [ref=e260]: Our Impact
+            - paragraph [ref=e261]: Numbers That Speak
+            - paragraph [ref=e262]: Transforming education across Pakistan with accessible, quality learning
+          - generic [ref=e263]:
+            - generic [ref=e267]:
+              - img [ref=e269]
+              - generic [ref=e275]:
+                - paragraph [ref=e276]: "0"
+                - paragraph [ref=e277]: +
+              - paragraph [ref=e278]: Active Students
+            - generic [ref=e282]:
+              - img [ref=e284]
+              - generic [ref=e288]:
+                - paragraph [ref=e289]: "0"
+                - paragraph [ref=e290]: +
+              - paragraph [ref=e291]: EdTech videos
+            - generic [ref=e295]:
+              - img [ref=e297]
+              - generic [ref=e301]:
+                - paragraph [ref=e302]: "0"
+                - paragraph [ref=e303]: +
+              - paragraph [ref=e304]: lessons covered
+            - generic [ref=e308]:
+              - img [ref=e310]
+              - generic [ref=e313]:
+                - paragraph [ref=e314]: "0"
+                - paragraph [ref=e315]: +
+              - paragraph [ref=e316]: Educators
+            - generic [ref=e320]:
+              - img [ref=e322]
+              - generic [ref=e326]:
+                - paragraph [ref=e327]: "0"
+                - paragraph [ref=e328]: +
+              - paragraph [ref=e329]: App Downloads
+        - generic [ref=e333]:
+          - generic [ref=e334]:
+            - paragraph [ref=e335]: Why Choose Us
+            - paragraph [ref=e336]: Everything You Need to Succeed
+            - paragraph [ref=e337]: Discover why thousands of students trust OTS for their educational journey. Our platform is designed to make learning effective, engaging, and accessible.
+          - generic [ref=e338]:
+            - generic [ref=e343] [cursor=pointer]:
+              - img [ref=e345]
+              - paragraph [ref=e347]: Interactive Video Lessons
+              - paragraph [ref=e348]: Engaging video content with visual explanations that make complex concepts easy to understand.
+              - generic [ref=e349]:
+                - paragraph [ref=e350]: Learn More
+                - paragraph [ref=e351]: →
+            - generic [ref=e356] [cursor=pointer]:
+              - img [ref=e358]
+              - paragraph [ref=e360]: Complete Curriculum
+              - paragraph [ref=e361]: From KG to Class 12, covering all subjects aligned with Sindh Board, Agha Khan, and Cambridge.
+              - generic [ref=e362]:
+                - paragraph [ref=e363]: Learn More
+                - paragraph [ref=e364]: →
+            - generic [ref=e369] [cursor=pointer]:
+              - img [ref=e371]
+              - paragraph [ref=e373]: Learn Anywhere
+              - paragraph [ref=e374]: Access lessons on any device - mobile, tablet, or desktop. Learn on the go with our app.
+              - generic [ref=e375]:
+                - paragraph [ref=e376]: Learn More
+                - paragraph [ref=e377]: →
+            - generic [ref=e382] [cursor=pointer]:
+              - img [ref=e384]
+              - paragraph [ref=e387]: Quizzes & Assessments
+              - paragraph [ref=e388]: Test your knowledge with interactive quizzes and track your progress with detailed analytics.
+              - generic [ref=e389]:
+                - paragraph [ref=e390]: Learn More
+                - paragraph [ref=e391]: →
+            - generic [ref=e396] [cursor=pointer]:
+              - img [ref=e398]
+              - paragraph [ref=e400]: Expert Teachers
+              - paragraph [ref=e401]: Learn from qualified educators with years of experience in their respective fields.
+              - generic [ref=e402]:
+                - paragraph [ref=e403]: Learn More
+                - paragraph [ref=e404]: →
+            - generic [ref=e409] [cursor=pointer]:
+              - img [ref=e411]
+              - paragraph [ref=e414]: Learn at Your Pace
+              - paragraph [ref=e415]: No deadlines, no pressure. Study whenever and wherever suits you best.
+              - generic [ref=e416]:
+                - paragraph [ref=e417]: Learn More
+                - paragraph [ref=e418]: →
+            - generic [ref=e423] [cursor=pointer]:
+              - img [ref=e425]
+              - paragraph [ref=e427]: Safe & Secure
+              - paragraph [ref=e428]: Kid-friendly environment with no ads or inappropriate content. Safe for all ages.
+              - generic [ref=e429]:
+                - paragraph [ref=e430]: Learn More
+                - paragraph [ref=e431]: →
+            - generic [ref=e436] [cursor=pointer]:
+              - img [ref=e438]
+              - paragraph [ref=e440]: 100% Free Forever
+              - paragraph [ref=e441]: Quality education should be accessible to everyone. All content is completely free.
+              - generic [ref=e442]:
+                - paragraph [ref=e443]: Learn More
+                - paragraph [ref=e444]: →
+        - generic [ref=e447]:
+          - generic [ref=e448]:
+            - paragraph [ref=e449]: The learning Flow
+            - paragraph [ref=e450]: How It Works
+            - paragraph [ref=e451]: Start your learning journey in just a few simple steps
+          - generic [ref=e452]:
+            - generic [ref=e454]:
+              - generic [ref=e455]:
+                - img [ref=e458]
+                - generic [ref=e461]: "1"
+              - generic [ref=e462]:
+                - paragraph [ref=e463]: Create Account
+                - paragraph [ref=e464]: Sign up for free in seconds. No credit card required.
+            - generic [ref=e468]:
+              - generic [ref=e469]:
+                - img [ref=e472]
+                - generic [ref=e475]: "2"
+              - generic [ref=e476]:
+                - paragraph [ref=e477]: Choose Your Class
+                - paragraph [ref=e478]: Select your grade level and subjects you want to learn.
+            - generic [ref=e482]:
+              - generic [ref=e483]:
+                - img [ref=e486]
+                - generic [ref=e488]: "3"
+              - generic [ref=e489]:
+                - paragraph [ref=e490]: Start Learning
+                - paragraph [ref=e491]: Watch engaging video lessons and practise with quizzes.
+            - generic [ref=e495]:
+              - generic [ref=e496]:
+                - img [ref=e499]
+                - generic [ref=e502]: "4"
+              - generic [ref=e503]:
+                - paragraph [ref=e504]: Track Progress
+                - paragraph [ref=e505]: Monitor your improvement and celebrate your achievements.
+          - link [ref=e507] [cursor=pointer]:
+            - /url: /signup
+            - text: Get Start
+            - img [ref=e509]
+        - generic [ref=e514]:
+          - generic [ref=e515]:
+            - generic [ref=e516]:
+              - img [ref=e517]
+              - paragraph [ref=e519]: Video Lessons
+            - heading [level=2] [ref=e520]: Our YouTube Learning Hub
+            - paragraph [ref=e521]: Explore our educational content and empower your learning journey with free video lessons.
+          - generic [ref=e524]:
+            - generic [ref=e525]:
+              - img [ref=e527]
+              - generic [ref=e528]:
+                - heading [level=3] [ref=e529]: Loading...
+                - generic [ref=e530]:
+                  - generic [ref=e531]:
+                    - img [ref=e532]
+                    - paragraph [ref=e537]: Loading... Subs
+                  - paragraph [ref=e538]: •
+                  - generic [ref=e539]:
+                    - img [ref=e540]
+                    - paragraph [ref=e543]: Loading... Videos
+                  - paragraph [ref=e544]: •
+                  - generic [ref=e545]:
+                    - img [ref=e546]
+                    - paragraph [ref=e549]: Loading... Views
+            - link [ref=e550] [cursor=pointer]:
+              - /url: https://www.youtube.com/@otsedtech?sub_confirmation=1
+              - img [ref=e552]
+              - text: Subscribe
+          - generic [ref=e554]:
+            - link [ref=e555] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=d0aNEJfvH_o
+              - generic [ref=e556]:
+                - generic [ref=e558]:
+                  - img [ref=e559]
+                  - img [ref=e563]
+                  - generic [ref=e565]: HD
+                - generic [ref=e566]:
+                  - paragraph [ref=e567]: Chapter 04 | Iteration/Loop | 10th Class | Computer | Sindh Board | @otsedtech
+                  - generic [ref=e568]:
+                    - generic [ref=e569]:
+                      - img [ref=e570]
+                      - paragraph [ref=e573]: 24K views
+                    - paragraph [ref=e574]: •
+                    - paragraph [ref=e575]: Off The School
+            - link [ref=e576] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=mAGGOmv75hw
+              - generic [ref=e577]:
+                - generic [ref=e579]:
+                  - img [ref=e580]
+                  - img [ref=e584]
+                  - generic [ref=e586]: HD
+                - generic [ref=e587]:
+                  - paragraph [ref=e588]: "Chapter 20: Theory of Quadratic Equations | Exercise 20.3 | 10th Class | Sindh Board | @otsedtech"
+                  - generic [ref=e589]:
+                    - generic [ref=e590]:
+                      - img [ref=e591]
+                      - paragraph [ref=e594]: 58K views
+                    - paragraph [ref=e595]: •
+                    - paragraph [ref=e596]: Off The School
+            - link [ref=e597] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=VCtBlSio-eQ
+              - generic [ref=e598]:
+                - generic [ref=e600]:
+                  - img [ref=e601]
+                  - img [ref=e605]
+                  - generic [ref=e607]: HD
+                - generic [ref=e608]:
+                  - paragraph [ref=e609]: "Unit 1: The Voice of God | 10th Class | English | Sindh Board | @otsedtech"
+                  - generic [ref=e610]:
+                    - generic [ref=e611]:
+                      - img [ref=e612]
+                      - paragraph [ref=e615]: 48K views
+                    - paragraph [ref=e616]: •
+                    - paragraph [ref=e617]: Off The School
+            - link [ref=e618] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=IhpDT9_eMzE
+              - generic [ref=e619]:
+                - generic [ref=e621]:
+                  - img [ref=e622]
+                  - img [ref=e626]
+                  - generic [ref=e628]: HD
+                - generic [ref=e629]:
+                  - paragraph [ref=e630]: Ideology of Pakistan | 10th Class | PST | Sindh Board | @otsedtech
+                  - generic [ref=e631]:
+                    - generic [ref=e632]:
+                      - img [ref=e633]
+                      - paragraph [ref=e636]: 28K views
+                    - paragraph [ref=e637]: •
+                    - paragraph [ref=e638]: Off The School
+            - link [ref=e639] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=gjGaI5szJGA
+              - generic [ref=e640]:
+                - generic [ref=e642]:
+                  - img [ref=e643]
+                  - img [ref=e647]
+                  - generic [ref=e649]: HD
+                - generic [ref=e650]:
+                  - paragraph [ref=e651]: Homeostasis | 10th Class | Biology | Sindh Board | @otsedtech
+                  - generic [ref=e652]:
+                    - generic [ref=e653]:
+                      - img [ref=e654]
+                      - paragraph [ref=e657]: 59K views
+                    - paragraph [ref=e658]: •
+                    - paragraph [ref=e659]: Off The School
+            - link [ref=e660] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=j_1_V5vrBOE
+              - generic [ref=e661]:
+                - generic [ref=e663]:
+                  - img [ref=e664]
+                  - img [ref=e668]
+                  - generic [ref=e670]: HD
+                - generic [ref=e671]:
+                  - paragraph [ref=e672]: 𝐈𝐧𝐭𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐨𝐧 𝐭𝐨 𝟗𝐭𝐡 𝐂𝐡𝐞𝐦𝐢𝐬𝐭𝐫𝐲 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐍𝐨𝐭𝐞𝐬 | @otsedtech | @Off-The-School
+                  - generic [ref=e673]:
+                    - generic [ref=e674]:
+                      - img [ref=e675]
+                      - paragraph [ref=e678]: 46K views
+                    - paragraph [ref=e679]: •
+                    - paragraph [ref=e680]: Off The School
+          - link [ref=e682] [cursor=pointer]:
+            - /url: https://www.youtube.com/@otsedtech
+            - text: View All Videos
+            - img [ref=e684]
+        - generic [ref=e689]:
+          - generic [ref=e690]:
+            - generic [ref=e692]: Daily Micro Learning
+            - heading [level=2] [ref=e695]: Learn Something New In A Minute
+            - paragraph [ref=e697]: Scroll, Tap and Learn.
+            - link [ref=e699] [cursor=pointer]:
+              - /url: https://www.instagram.com/otsedtech/
+              - img [ref=e701]
+              - text: Follow us on Instagram
+          - generic [ref=e704]:
+            - generic [ref=e706] [cursor=pointer]:
+              - generic [ref=e707]:
+                - img [ref=e708]
+                - generic [ref=e710]:
+                  - paragraph [ref=e711]: Our Tech Is Killing Us
+                  - generic [ref=e712]:
+                    - generic [ref=e713]:
+                      - img [ref=e714]
+                      - paragraph [ref=e717]: 5.4K
+                    - generic [ref=e718]:
+                      - img [ref=e719]
+                      - paragraph [ref=e721]: Flip to watch
+              - generic [ref=e724]:
+                - img [ref=e725]
+                - paragraph [ref=e728]: Watch on Instagram
+                - link [ref=e729]:
+                  - /url: https://www.instagram.com/reel/DT77VXwDxgs/
+                  - text: Watch Reel
+                  - img [ref=e731]
+            - generic [ref=e736] [cursor=pointer]:
+              - generic [ref=e737]:
+                - img [ref=e738]
+                - generic [ref=e740]:
+                  - paragraph [ref=e741]: Japan's 1,500 Quakes Explained
+                  - generic [ref=e742]:
+                    - generic [ref=e743]:
+                      - img [ref=e744]
+                      - paragraph [ref=e747]: 9.1K
+                    - generic [ref=e748]:
+                      - img [ref=e749]
+                      - paragraph [ref=e751]: Flip to watch
+              - generic [ref=e754]:
+                - img [ref=e755]
+                - paragraph [ref=e758]: Watch on Instagram
+                - link [ref=e759]:
+                  - /url: https://www.instagram.com/reel/DTnGeWAFCR5/
+                  - text: Watch Reel
+                  - img [ref=e761]
+            - generic [ref=e766] [cursor=pointer]:
+              - generic [ref=e767]:
+                - img [ref=e768]
+                - generic [ref=e770]:
+                  - paragraph [ref=e771]: "GenZ's Pakistan: From Consumer to Creator"
+                  - generic [ref=e772]:
+                    - generic [ref=e773]:
+                      - img [ref=e774]
+                      - paragraph [ref=e777]: 5.8K
+                    - generic [ref=e778]:
+                      - img [ref=e779]
+                      - paragraph [ref=e781]: Flip to watch
+              - generic [ref=e784]:
+                - img [ref=e785]
+                - paragraph [ref=e788]: Watch on Instagram
+                - link [ref=e789]:
+                  - /url: https://www.instagram.com/reel/DQ4Av80CONR/
+                  - text: Watch Reel
+                  - img [ref=e791]
+            - generic [ref=e796] [cursor=pointer]:
+              - generic [ref=e797]:
+                - img [ref=e798]
+                - generic [ref=e800]:
+                  - paragraph [ref=e801]: The Eco Friendly Currency
+                  - generic [ref=e802]:
+                    - generic [ref=e803]:
+                      - img [ref=e804]
+                      - paragraph [ref=e807]: 6.7K
+                    - generic [ref=e808]:
+                      - img [ref=e809]
+                      - paragraph [ref=e811]: Flip to watch
+              - generic [ref=e814]:
+                - img [ref=e815]
+                - paragraph [ref=e818]: Watch on Instagram
+                - link [ref=e819]:
+                  - /url: https://www.instagram.com/reel/DQO6WC5ATaN/
+                  - text: Watch Reel
+                  - img [ref=e821]
+          - generic [ref=e826]:
+            - generic [ref=e827]:
+              - paragraph [ref=e828]: 0s
+              - paragraph [ref=e829]: Avg reel length
+            - generic [ref=e830]:
+              - paragraph [ref=e831]: 0+
+              - paragraph [ref=e832]: Concepts simplified
+            - generic [ref=e833]:
+              - paragraph [ref=e834]: 0K+
+              - paragraph [ref=e835]: Monthly views
+            - link [ref=e837] [cursor=pointer]:
+              - /url: https://www.instagram.com/otsedtech/
+              - generic [ref=e838]: Start Learning
+              - img [ref=e840]
+        - generic [ref=e847]:
+          - generic [ref=e848]:
+            - generic [ref=e849]:
+              - generic [ref=e850]: 
+              - text: Our YouTube Channels
+            - heading [level=2] [ref=e851]:
+              - generic [ref=e852]: Explore Our
+              - text: Educational Network
+            - paragraph [ref=e853]: Discover our diverse range of YouTube channels, each dedicated to different aspects of education and learning
+          - generic [ref=e854]:
+            - generic [ref=e855]:
+              - link [ref=e857] [cursor=pointer]:
+                - /url: https://www.youtube.com/@Off-The-School
+                - generic [ref=e859]:
+                  - generic [ref=e860]:
+                    - img [ref=e862]
+                    - img [ref=e865]
+                  - paragraph [ref=e867]: Off The School
+                  - paragraph [ref=e868]: Comprehensive educational content
+                  - img [ref=e869]
+              - link [ref=e872] [cursor=pointer]:
+                - /url: https://www.youtube.com/@otsednews
+                - generic [ref=e874]:
+                  - generic [ref=e875]:
+                    - img [ref=e877]
+                    - img [ref=e880]
+                  - paragraph [ref=e882]: EdNews
+                  - paragraph [ref=e883]: Latest education sector updates
+                  - img [ref=e884]
+            - generic [ref=e886]:
+              - link [ref=e888] [cursor=pointer]:
+                - /url: https://www.youtube.com/@otsedtech
+                - generic [ref=e890]:
+                  - generic [ref=e891]:
+                    - img [ref=e893]
+                    - img [ref=e896]
+                  - paragraph [ref=e898]: EdTech
+                  - paragraph [ref=e899]: Technology-driven education
+                  - img [ref=e900]
+              - link [ref=e903] [cursor=pointer]:
+                - /url: https://www.youtube.com/@otsedsense
+                - generic [ref=e905]:
+                  - generic [ref=e906]:
+                    - img [ref=e908]
+                    - img [ref=e911]
+                  - paragraph [ref=e913]: EdSense
+                  - paragraph [ref=e914]: Educational insights & discussions
+                  - img [ref=e915]
+              - link [ref=e918] [cursor=pointer]:
+                - /url: https://www.youtube.com/@otsedfun
+                - generic [ref=e920]:
+                  - generic [ref=e921]:
+                    - img [ref=e923]
+                    - img [ref=e926]
+                  - paragraph [ref=e928]: EdFun
+                  - paragraph [ref=e929]: Fun & engaging learning
+                  - img [ref=e930]
+          - link [ref=e933] [cursor=pointer]:
+            - /url: https://www.youtube.com/@Off-The-School
+            - img [ref=e935]
+            - text: Subscribe Our Channels
+        - generic [ref=e941]:
+          - generic [ref=e942]:
+            - img [ref=e947]
+            - img [ref=e952]
+            - generic [ref=e958]:
+              - generic [ref=e960]:
+                - img [ref=e961]
+                - paragraph [ref=e964]: Stay Updated
+              - heading [level=2] [ref=e966]:
+                - generic [ref=e967]: Subscribe to our
+                - text: Newsletter
+              - paragraph [ref=e969]: Get the latest educational tips, course updates, and exclusive content delivered straight to your inbox.
+              - generic [ref=e971]:
+                - textbox [ref=e972]:
+                  - /placeholder: Enter your email address
+                - button [ref=e973] [cursor=pointer]:
+                  - text: Subscribe
+                  - img [ref=e975]
+              - paragraph [ref=e979]: 🔒 No spam, unsubscribe anytime
+          - generic [ref=e981]:
+            - img [ref=e984]
+            - heading [level=2] [ref=e987]: Oops!
+            - button [ref=e988] [cursor=pointer]: Try Again
+        - generic [ref=e994]:
+          - generic [ref=e995]:
+            - generic [ref=e997]:
+              - img [ref=e998]
+              - paragraph [ref=e1000]: Download Our App
+            - paragraph [ref=e1002]: Learning Together
+            - paragraph [ref=e1004]: Download our mobile app and access all courses offline. Learn anytime, anywhere with a seamless experience.
+            - generic [ref=e1005]:
+              - generic [ref=e1006]:
+                - img [ref=e1007]
+                - img [ref=e1009]
+                - img [ref=e1011]
+                - img [ref=e1013]
+                - img [ref=e1015]
+              - paragraph [ref=e1017]: 4.9 • 1000+ Reviews
+            - generic [ref=e1018]:
+              - link [ref=e1019] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.otsapp
+                - img [ref=e1021]
+                - generic [ref=e1023]:
+                  - paragraph [ref=e1024]: GET IT ON
+                  - paragraph [ref=e1025]: Google Play
+              - link [ref=e1026] [cursor=pointer]:
+                - /url: /signup
+                - text: Try Web Version
+                - img [ref=e1028]
+          - img [ref=e1033]
+        - generic [ref=e1035]:
+          - generic [ref=e1036]:
+            - generic [ref=e1038]:
+              - img [ref=e1040]
+              - paragraph [ref=e1041]: Pakistan's first free EdTech platform. Learn smartly at your own Pace, Anywhere, Anytime.
+              - generic [ref=e1042]:
+                - paragraph [ref=e1043]: Stay Updated
+                - generic [ref=e1044]:
+                  - textbox [ref=e1045]:
+                    - /placeholder: Enter your email
+                  - button [ref=e1046] [cursor=pointer]:
+                    - img [ref=e1047]
+              - generic [ref=e1051]:
+                - link [ref=e1052] [cursor=pointer]:
+                  - /url: https://www.facebook.com/OTS.Edtech/
+                  - img [ref=e1053]
+                - link [ref=e1055] [cursor=pointer]:
+                  - /url: https://x.com/offtheschool
+                  - img [ref=e1056]
+                - link [ref=e1058] [cursor=pointer]:
+                  - /url: https://www.instagram.com/otsedtech/
+                  - img [ref=e1059]
+                - link [ref=e1061] [cursor=pointer]:
+                  - /url: https://linkedin.com/company/off-the-school/
+                  - img [ref=e1062]
+                - link [ref=e1064] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@otsedtech
+                  - img [ref=e1065]
+            - generic [ref=e1068]:
+              - heading [level=4] [ref=e1069]: Quick Links
+              - generic [ref=e1070]:
+                - link [ref=e1071] [cursor=pointer]:
+                  - /url: /aboutus
+                  - img [ref=e1072]
+                  - text: About Us
+                - link [ref=e1075] [cursor=pointer]:
+                  - /url: /contactus
+                  - img [ref=e1076]
+                  - text: Contact
+                - link [ref=e1079] [cursor=pointer]:
+                  - /url: /faq
+                  - img [ref=e1080]
+                  - text: FAQ
+                - link [ref=e1083] [cursor=pointer]:
+                  - /url: /privacy-policy
+                  - img [ref=e1084]
+                  - text: Privacy Policy
+                - link [ref=e1087] [cursor=pointer]:
+                  - /url: /terms-of-use
+                  - img [ref=e1088]
+                  - text: Terms of Use
+            - generic [ref=e1092]:
+              - heading [level=4] [ref=e1093]: Contact Us
+              - generic [ref=e1094]:
+                - generic [ref=e1095]:
+                  - img [ref=e1097]
+                  - paragraph [ref=e1100]: Off The School, opposite Baghdadi Masjid, Martin Quarters, near Jail Road, Karachi
+                - generic [ref=e1101]:
+                  - img [ref=e1103]
+                  - link [ref=e1106] [cursor=pointer]:
+                    - /url: mailto:info@offtheschool.io
+                    - text: info@offtheschool.io
+                - generic [ref=e1107]:
+                  - img [ref=e1109]
+                  - link [ref=e1111] [cursor=pointer]:
+                    - /url: tel:+923010687687
+                    - text: +92 301 0687687
+            - generic [ref=e1113]:
+              - heading [level=4] [ref=e1114]: Download App
+              - generic [ref=e1115]:
+                - paragraph [ref=e1116]: Get our app for a better learning experience
+                - generic [ref=e1118]:
+                  - img [ref=e1119]
+                  - generic [ref=e1120]:
+                    - paragraph [ref=e1121]: Scan to Download
+                    - link [ref=e1122] [cursor=pointer]:
+                      - /url: https://play.google.com/store
+                      - img [ref=e1123]
+          - generic [ref=e1125]:
+            - paragraph [ref=e1126]: © 2026 Off The School. All rights reserved.
+            - generic [ref=e1127]:
+              - link [ref=e1128] [cursor=pointer]:
+                - /url: /privacy-policy
+                - text: Privacy
+              - link [ref=e1129] [cursor=pointer]:
+                - /url: /terms-of-use
+                - text: Terms
+              - link [ref=e1130] [cursor=pointer]:
+                - /url: /faq
+                - text: FAQ
+        - button [ref=e1131] [cursor=pointer]:
+          - img [ref=e1132]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"
+  - dialog [ref=e1136]:
+    - generic [ref=e1138]:
+      - button "Close" [active] [ref=e1143] [cursor=pointer]:
+        - img [ref=e1144]
+      - img "Off The School App" [ref=e1152]
+      - generic [ref=e1154]:
+        - generic [ref=e1156]:
+          - img [ref=e1157]
+          - paragraph [ref=e1159]: Off The School App
+        - heading "Start Learning Smarter Anytime, Anywhere" [level=2] [ref=e1161]:
+          - text: Start Learning Smarter
+          - text: Anytime, Anywhere
+        - paragraph [ref=e1163]: Download our app and unlock courses, quizzes, and a personalized learning experience.
+        - generic [ref=e1164]:
+          - generic [ref=e1166]:
+            - img [ref=e1167]
+            - paragraph [ref=e1169]: 100+ Courses
+          - generic [ref=e1171]:
+            - img [ref=e1172]
+            - paragraph [ref=e1174]: Free Download
+        - generic [ref=e1176]:
+          - img [ref=e1177]
+          - img [ref=e1179]
+          - img [ref=e1181]
+          - img [ref=e1183]
+          - img [ref=e1185]
+          - paragraph [ref=e1187]: 4.8 Rating
+        - link "Google Play Get it on Google Play" [ref=e1189] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.otsapp
+          - generic [ref=e1191]:
+            - img "Google Play" [ref=e1192]
+            - generic [ref=e1193]:
+              - paragraph [ref=e1194]: Get it on
+              - paragraph [ref=e1195]: Google Play
+```

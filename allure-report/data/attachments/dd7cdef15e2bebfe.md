@@ -1,0 +1,82 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: specs\favoriteChapters.spec.js >> OTS EdTech Favorite Chapters Page >> TC_FAVCHAP_010: Empty state displays "No Favorite Chapters Yet" heading
+- Location: tests\specs\favoriteChapters.spec.js:241:3
+
+# Error details
+
+```
+Tearing down "context" exceeded the test timeout of 90000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e9]:
+        - img "menu icon" [ref=e11] [cursor=pointer]
+        - img "OTS logo" [ref=e13] [cursor=pointer]
+        - generic [ref=e14]:
+          - img "Taha" [ref=e17] [cursor=pointer]
+          - generic [ref=e18] [cursor=pointer]:
+            - paragraph [ref=e19]: Taha
+            - paragraph [ref=e20]: Student
+          - button "User Options" [ref=e21] [cursor=pointer]:
+            - img [ref=e22]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - group [ref=e26] [cursor=pointer]:
+            - img [ref=e28]
+            - paragraph: Dashboard
+          - group [ref=e30] [cursor=pointer]:
+            - img [ref=e32]
+            - paragraph: Switch Class
+          - group [ref=e34] [cursor=pointer]:
+            - img [ref=e36]
+            - paragraph: Reels
+          - group [ref=e39] [cursor=pointer]:
+            - img [ref=e41]
+            - paragraph: Enrollments
+          - group [ref=e44] [cursor=pointer]:
+            - img [ref=e46]
+            - paragraph: Quiz Tracking
+          - group [ref=e48] [cursor=pointer]:
+            - img [ref=e50]
+            - paragraph: Leaderboard
+          - group [ref=e52] [cursor=pointer]:
+            - img [ref=e54]
+            - paragraph: Favorite Chapters
+          - group [ref=e56] [cursor=pointer]:
+            - img [ref=e58]
+            - paragraph: Visit Website
+          - group [ref=e60] [cursor=pointer]:
+            - img [ref=e62]
+            - paragraph: Feedback
+          - group [ref=e64] [cursor=pointer]:
+            - img [ref=e66]
+            - paragraph: Logout
+        - generic [ref=e69]:
+          - heading "Favorite Chapters" [level=2] [ref=e80]
+          - generic [ref=e83]:
+            - img [ref=e84]
+            - heading "No Favorite Chapters Yet" [level=2] [ref=e86]
+            - paragraph [ref=e87]: Start adding chapters to your favorites by clicking the favorite button on any lesson page.
+            - button "Browse Chapters" [ref=e88] [cursor=pointer]:
+              - img [ref=e90]
+              - text: Browse Chapters
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"
+```

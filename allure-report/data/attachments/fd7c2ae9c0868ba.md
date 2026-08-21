@@ -1,0 +1,194 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: specs\enrollments_Page.spec.js >> OTS EdTech Enrollments Page >> TC_ENROLL_009: Double-click Enroll in New Course does not break navigation
+- Location: tests\specs\enrollments_Page.spec.js:233:3
+
+# Error details
+
+```
+Tearing down "context" exceeded the test timeout of 90000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e9]:
+        - img "menu icon" [ref=e11] [cursor=pointer]
+        - img "OTS logo" [ref=e13] [cursor=pointer]
+        - generic [ref=e14]:
+          - img "Taha" [ref=e17] [cursor=pointer]
+          - generic [ref=e18] [cursor=pointer]:
+            - paragraph [ref=e19]: Taha
+            - paragraph [ref=e20]: Student
+          - button "User Options" [ref=e21] [cursor=pointer]:
+            - img [ref=e22]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - group [ref=e26] [cursor=pointer]:
+            - img [ref=e28]
+            - paragraph: Dashboard
+          - group [ref=e30] [cursor=pointer]:
+            - img [ref=e32]
+            - paragraph: Switch Class
+          - group [ref=e34] [cursor=pointer]:
+            - img [ref=e36]
+            - paragraph: Reels
+          - group [ref=e39] [cursor=pointer]:
+            - img [ref=e41]
+            - paragraph: Enrollments
+          - group [ref=e44] [cursor=pointer]:
+            - img [ref=e46]
+            - paragraph: Quiz Tracking
+          - group [ref=e48] [cursor=pointer]:
+            - img [ref=e50]
+            - paragraph: Leaderboard
+          - group [ref=e52] [cursor=pointer]:
+            - img [ref=e54]
+            - paragraph: Favorite Chapters
+          - group [ref=e56] [cursor=pointer]:
+            - img [ref=e58]
+            - paragraph: Visit Website
+          - group [ref=e60] [cursor=pointer]:
+            - img [ref=e62]
+            - paragraph: Feedback
+          - group [ref=e64] [cursor=pointer]:
+            - img [ref=e66]
+            - paragraph: Logout
+        - generic [ref=e69]:
+          - generic [ref=e72]:
+            - navigation "breadcrumb" [ref=e74]:
+              - list [ref=e75]:
+                - listitem [ref=e76]:
+                  - link "Home" [ref=e77] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e78]
+                    - text: Home
+                  - img [ref=e81]
+                - listitem [ref=e83]:
+                  - generic [ref=e84] [cursor=pointer]: Explore
+                  - img [ref=e85]
+                - listitem [ref=e87]:
+                  - generic [ref=e88]: Categories
+            - heading "Explore Categories" [level=2] [ref=e92]
+          - generic [ref=e95]:
+            - generic [ref=e99] [cursor=pointer]:
+              - img [ref=e106]
+              - generic [ref=e650]:
+                - heading "Digital School" [level=2] [ref=e651]
+                - button "Explore Courses" [ref=e652]:
+                  - text: Explore Courses
+                  - img [ref=e655]
+              - generic [ref=e658]: 
+            - generic [ref=e660]:
+              - generic:
+                - generic:
+                  - img
+              - generic [ref=e662] [cursor=pointer]:
+                - img [ref=e669]
+                - generic [ref=e754]:
+                  - heading "Skills Academy" [level=2] [ref=e755]
+                  - button "Explore Courses" [ref=e756]:
+                    - text: Explore Courses
+                    - img [ref=e759]
+                - generic [ref=e762]: 
+          - generic [ref=e764]:
+            - generic [ref=e765]:
+              - generic [ref=e767]:
+                - img "Off The School" [ref=e769]
+                - paragraph [ref=e770]: Pakistan's first free EdTech platform. Learn smartly at your own Pace, Anywhere, Anytime.
+                - generic [ref=e771]:
+                  - paragraph [ref=e772]: Stay Updated
+                  - generic [ref=e773]:
+                    - textbox "Enter your email" [ref=e774]
+                    - button [ref=e775] [cursor=pointer]:
+                      - img [ref=e776]
+                - generic [ref=e780]:
+                  - link "Facebook" [ref=e781] [cursor=pointer]:
+                    - /url: https://www.facebook.com/OTS.Edtech/
+                    - img [ref=e782]
+                  - link "Twitter" [ref=e784] [cursor=pointer]:
+                    - /url: https://x.com/offtheschool
+                    - img [ref=e785]
+                  - link "Instagram" [ref=e787] [cursor=pointer]:
+                    - /url: https://www.instagram.com/otsedtech/
+                    - img [ref=e788]
+                  - link "LinkedIn" [ref=e790] [cursor=pointer]:
+                    - /url: https://linkedin.com/company/off-the-school/
+                    - img [ref=e791]
+                  - link "YouTube" [ref=e793] [cursor=pointer]:
+                    - /url: https://www.youtube.com/@otsedtech
+                    - img [ref=e794]
+              - generic [ref=e797]:
+                - heading "Quick Links" [level=4] [ref=e798]
+                - generic [ref=e799]:
+                  - link "About Us" [ref=e800] [cursor=pointer]:
+                    - /url: /aboutus
+                    - img [ref=e801]
+                    - text: About Us
+                  - link "Contact" [ref=e804] [cursor=pointer]:
+                    - /url: /contactus
+                    - img [ref=e805]
+                    - text: Contact
+                  - link "FAQ" [ref=e808] [cursor=pointer]:
+                    - /url: /faq
+                    - img [ref=e809]
+                    - text: FAQ
+                  - link "Privacy Policy" [ref=e812] [cursor=pointer]:
+                    - /url: /privacy-policy
+                    - img [ref=e813]
+                    - text: Privacy Policy
+                  - link "Terms of Use" [ref=e816] [cursor=pointer]:
+                    - /url: /terms-of-use
+                    - img [ref=e817]
+                    - text: Terms of Use
+              - generic [ref=e821]:
+                - heading "Contact Us" [level=4] [ref=e822]
+                - generic [ref=e823]:
+                  - generic [ref=e824]:
+                    - img [ref=e826]
+                    - paragraph [ref=e829]: Off The School, opposite Baghdadi Masjid, Martin Quarters, near Jail Road, Karachi
+                  - generic [ref=e830]:
+                    - img [ref=e832]
+                    - link "info@offtheschool.io" [ref=e835] [cursor=pointer]:
+                      - /url: mailto:info@offtheschool.io
+                  - generic [ref=e836]:
+                    - img [ref=e838]
+                    - link "+92 301 0687687" [ref=e840] [cursor=pointer]:
+                      - /url: tel:+923010687687
+              - generic [ref=e842]:
+                - heading "Download App" [level=4] [ref=e843]
+                - generic [ref=e844]:
+                  - paragraph [ref=e845]: Get our app for a better learning experience
+                  - generic [ref=e847]:
+                    - img "QR Code" [ref=e848]
+                    - generic [ref=e849]:
+                      - paragraph [ref=e850]: Scan to Download
+                      - link "Google Play" [ref=e851] [cursor=pointer]:
+                        - /url: https://play.google.com/store
+                        - img "Google Play" [ref=e852]
+            - generic [ref=e854]:
+              - paragraph [ref=e855]: © 2026 Off The School. All rights reserved.
+              - generic [ref=e856]:
+                - link "Privacy" [ref=e857] [cursor=pointer]:
+                  - /url: /privacy-policy
+                - link "Terms" [ref=e858] [cursor=pointer]:
+                  - /url: /terms-of-use
+                - link "FAQ" [ref=e859] [cursor=pointer]:
+                  - /url: /faq
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"
+```

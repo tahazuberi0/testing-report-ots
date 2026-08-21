@@ -1,0 +1,245 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: specs\Dashboard.spec.js >> OTS EdTech Dashboard Page >> TC_DASH_018: Weekly Progress section is visible
+- Location: tests\specs\Dashboard.spec.js:455:3
+
+# Error details
+
+```
+Tearing down "context" exceeded the test timeout of 60000ms.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e9]:
+        - img "menu icon" [ref=e11] [cursor=pointer]
+        - img "OTS logo" [ref=e13] [cursor=pointer]
+        - generic [ref=e14]:
+          - img "Taha" [ref=e17] [cursor=pointer]
+          - generic [ref=e18] [cursor=pointer]:
+            - paragraph [ref=e19]: Taha
+            - paragraph [ref=e20]: Student
+          - button "User Options" [ref=e21] [cursor=pointer]:
+            - img [ref=e22]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - group [ref=e26] [cursor=pointer]:
+            - img [ref=e28]
+            - paragraph: Dashboard
+          - group [ref=e30] [cursor=pointer]:
+            - img [ref=e32]
+            - paragraph: Switch Class
+          - group [ref=e34] [cursor=pointer]:
+            - img [ref=e36]
+            - paragraph: Reels
+          - group [ref=e39] [cursor=pointer]:
+            - img [ref=e41]
+            - paragraph: Enrollments
+          - group [ref=e44] [cursor=pointer]:
+            - img [ref=e46]
+            - paragraph: Quiz Tracking
+          - group [ref=e48] [cursor=pointer]:
+            - img [ref=e50]
+            - paragraph: Leaderboard
+          - group [ref=e52] [cursor=pointer]:
+            - img [ref=e54]
+            - paragraph: Favorite Chapters
+          - group [ref=e56] [cursor=pointer]:
+            - img [ref=e58]
+            - paragraph: Visit Website
+          - group [ref=e60] [cursor=pointer]:
+            - img [ref=e62]
+            - paragraph: Feedback
+          - group [ref=e64] [cursor=pointer]:
+            - img [ref=e66]
+            - paragraph: Logout
+        - generic [ref=e69]:
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - generic [ref=e78] [cursor=pointer]:
+                  - generic [ref=e79]: 
+                  - paragraph [ref=e80]: 0 Day Streak!
+                - generic [ref=e82] [cursor=pointer]:
+                  - generic [ref=e83]: 
+                  - paragraph [ref=e84]: 0 XP
+              - generic [ref=e86]:
+                - generic [ref=e87]: 
+                - text: GOOD EVENING
+              - generic [ref=e88]:
+                - heading "Taha" [level=2] [ref=e90]
+                - button "Edit profile" [ref=e91] [cursor=pointer]:
+                  - generic [ref=e92]: 
+              - paragraph [ref=e94]:
+                - text: You've completed
+                - generic [ref=e95]: 0%
+                - text: of your weekly goal! Keep the momentum going!
+              - generic [ref=e98]:
+                - paragraph [ref=e99]: Weekly Progress
+                - paragraph [ref=e100]: 0%
+              - generic [ref=e102]:
+                - generic [ref=e104]:
+                  - generic [ref=e106]: 
+                  - paragraph [ref=e107]: "4"
+                  - paragraph [ref=e108]: Courses
+                - generic [ref=e110]:
+                  - generic [ref=e112]: 
+                  - paragraph [ref=e113]: "0"
+                  - paragraph [ref=e114]: Lessons
+                - generic [ref=e116]:
+                  - generic [ref=e118]: 
+                  - paragraph [ref=e119]: "1"
+                  - paragraph [ref=e120]: Quizzes
+            - generic [ref=e121]:
+              - img [ref=e125]
+              - generic [ref=e197]:
+                - generic [ref=e198]: 
+                - text: ON TRACK!
+              - generic [ref=e200]:
+                - generic [ref=e201]: 
+                - text: KEEP GOING!
+          - generic [ref=e202]:
+            - generic [ref=e204]:
+              - generic [ref=e207]:
+                - generic [ref=e208]:
+                  - generic [ref=e209]:
+                    - generic [ref=e210]: 
+                    - heading "Your Progress" [level=2] [ref=e211]
+                  - paragraph [ref=e212]: Overall completion for your enrolled class
+                - generic [ref=e213]:
+                  - paragraph [ref=e214]: 0.0%
+                  - progressbar [ref=e215]:
+                    - img [ref=e216]
+                    - generic [ref=e220]: 
+              - generic [ref=e222]:
+                - paragraph [ref=e223]: Progress
+                - paragraph [ref=e224]: 0.0%
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - generic [ref=e229]: 
+                - heading "My Subjects" [level=2] [ref=e230]
+                - generic [ref=e231]: 5 Enrolled
+              - group [ref=e232]:
+                - button "Grid view" [ref=e233] [cursor=pointer]:
+                  - generic [ref=e234]: 
+                - button "Carousel view" [ref=e235] [cursor=pointer]:
+                  - generic [ref=e236]: 
+            - generic [ref=e238]:
+              - group [ref=e239]:
+                - generic [ref=e240]:
+                  - progressbar [ref=e241]:
+                    - img [ref=e242]
+                    - generic [ref=e245]: 0.0%
+                  - paragraph [ref=e246]: Progress
+                - generic [ref=e247]:
+                  - generic [ref=e248]:
+                    - generic [ref=e250]: 
+                    - generic [ref=e252]: 
+                    - generic [ref=e254]: 
+                    - generic [ref=e256]: 
+                    - generic [ref=e258]: 
+                  - paragraph [ref=e259]: Total Chapters 8
+                  - heading "COMPUTER" [level=2] [ref=e261]
+                  - paragraph [ref=e262]: Computer for Class 6
+                - button "Watch video" [ref=e263] [cursor=pointer]:
+                  - generic [ref=e265]: 
+                  - text: Watch video
+                - button "Start Learning" [ref=e266] [cursor=pointer]
+              - group [ref=e267]:
+                - generic [ref=e268]:
+                  - progressbar [ref=e269]:
+                    - img [ref=e270]
+                    - generic [ref=e273]: 0.0%
+                  - paragraph [ref=e274]: Progress
+                - generic [ref=e275]:
+                  - generic [ref=e276]:
+                    - generic [ref=e278]: 
+                    - generic [ref=e280]: 
+                    - generic [ref=e282]: 
+                    - generic [ref=e284]: 
+                    - generic [ref=e286]: 
+                  - paragraph [ref=e287]: Total Chapters 13
+                  - heading "MATHEMATICS" [level=2] [ref=e289]
+                  - paragraph [ref=e290]: Mathematics for Class 6
+                - button "Watch video" [ref=e291] [cursor=pointer]:
+                  - generic [ref=e293]: 
+                  - text: Watch video
+                - button "Start Learning" [ref=e294] [cursor=pointer]
+              - group [ref=e295]:
+                - generic [ref=e296]:
+                  - progressbar [ref=e297]:
+                    - img [ref=e298]
+                    - generic [ref=e301]: 0.0%
+                  - paragraph [ref=e302]: Progress
+                - generic [ref=e303]:
+                  - generic [ref=e304]:
+                    - generic [ref=e306]: 
+                    - generic [ref=e308]: 
+                    - generic [ref=e310]: 
+                    - generic [ref=e312]: 
+                    - generic [ref=e314]: 
+                  - paragraph [ref=e315]: Total Chapters 18
+                  - heading "URDU" [level=2] [ref=e317]
+                  - paragraph [ref=e318]: Urdu for Class 6
+                - button "Watch video" [ref=e319] [cursor=pointer]:
+                  - generic [ref=e321]: 
+                  - text: Watch video
+                - button "Start Learning" [ref=e322] [cursor=pointer]
+              - group [ref=e323]:
+                - generic [ref=e324]:
+                  - progressbar [ref=e325]:
+                    - img [ref=e326]
+                    - generic [ref=e329]: 0.0%
+                  - paragraph [ref=e330]: Progress
+                - generic [ref=e331]:
+                  - generic [ref=e332]:
+                    - generic [ref=e334]: 
+                    - generic [ref=e336]: 
+                    - generic [ref=e338]: 
+                    - generic [ref=e340]: 
+                    - generic [ref=e342]: 
+                  - paragraph [ref=e343]: Total Chapters 15
+                  - heading "ENGLISH" [level=2] [ref=e345]
+                  - paragraph [ref=e346]: English for Class 6
+                - button "Watch video" [ref=e347] [cursor=pointer]:
+                  - generic [ref=e349]: 
+                  - text: Watch video
+                - button "Start Learning" [ref=e350] [cursor=pointer]
+              - group [ref=e351]:
+                - generic [ref=e352]:
+                  - progressbar [ref=e353]:
+                    - img [ref=e354]
+                    - generic [ref=e357]: 0.0%
+                  - paragraph [ref=e358]: Progress
+                - generic [ref=e359]:
+                  - generic [ref=e360]:
+                    - generic [ref=e362]: 
+                    - generic [ref=e364]: 
+                    - generic [ref=e366]: 
+                    - generic [ref=e368]: 
+                    - generic [ref=e370]: 
+                  - paragraph [ref=e371]: Total Chapters 10
+                  - heading "SCIENCE" [level=2] [ref=e373]
+                  - paragraph [ref=e374]: Science for Class 6
+                - button "Watch video" [ref=e375] [cursor=pointer]:
+                  - generic [ref=e377]: 
+                  - text: Watch video
+                - button "Start Learning" [ref=e378] [cursor=pointer]
+  - generic:
+    - region "Notifications-top"
+    - region "Notifications-top-left"
+    - region "Notifications-top-right"
+    - region "Notifications-bottom-left"
+    - region "Notifications-bottom"
+    - region "Notifications-bottom-right"
+```
